@@ -29,6 +29,6 @@ demographics in the tech industry by facilitating education, training, and staff
 Team contact: [goaldiggerskata@hotmail.com](mailto:goaldiggerskata@hotmail.com)
 
 Contributors:
-* [MVS Rama Krishna] ( )
-* [B Suman] ( )  
-* [Rama Surendra Babu G] (https://www.linkedin.com/in/rama-surendra-babu-g-985a1913/)
+* MVS Rama Krishna [https://www.linkedin.com/in/mvs-ramakrishna-a3a57225/]
+* B Suman ( )  
+* Rama Surendra Babu G [https://www.linkedin.com/in/rama-surendra-babu-g-985a1913/]
