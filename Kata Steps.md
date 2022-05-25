@@ -18,8 +18,17 @@ Non-Profit Organization
 
 Aspirants
 
+Career Management
+
 Administration
 
+Workflow Management for both Aspirants and Non-profit Organization - Core Domain
+
+Networking Platform - Core Domain
+
 Notification - Generic
+
+
+
 
 
