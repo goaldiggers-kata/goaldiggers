@@ -7,7 +7,7 @@ Diversity Cyber Council is a 501c3 Non-Profit that serves under-represented demo
 Current Platform:
 
 * It is offering 3 courses and it helps the underserved communities to register to these courses with a standard form. After the aspirant gets registered he gets notified on mail. 
-* In addition the platform also allows the non-profit organizations to register and help in facilitating the education, training and staffing of underrepresented groups in cybersecurity. For now they can donate, or partner to provide apprentice program on cyber security, employer partner or a strategic partner.
+* In addition the platform also allows the non-profit organizations to register and help in facilitating the education, training and staffing of underrepresented groups in cybersecurity. For now they can donate, or partner to provide apprentice program on cyber security or become an employer partner or a strategic partner.
 
 
 
