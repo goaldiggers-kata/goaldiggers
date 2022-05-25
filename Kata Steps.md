@@ -15,8 +15,11 @@ Current Platform:
 # 4. Identify Domain, Sub Domain, Generic and Core Domain and map the business capability mapping of each domain. Bounded Context Identification
 
 Non-Profit Organization
+
 Aspirants
+
 Administration
+
 Notification - Generic
 
 
