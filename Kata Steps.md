@@ -10,9 +10,13 @@ Current Platform:
 * In addition the platform also allows the non-profit organizations to register and help in facilitating the education, training and staffing of underrepresented groups in cybersecurity. For now they can donate, or partner to provide apprentice program on cyber security or become an employer partner or a strategic partner.
 
 
-
-
 # 2. Process Discovery: It is a process of Domain exploration which will identify the complete processes involved in building the Cyber council system
 # 3. Event Storming Session should map the process discovery 
 # 4. Identify Domain, Sub Domain, Generic and Core Domain and map the business capability mapping of each domain. Bounded Context Identification
+
+Non-Profit Organization
+Aspirants
+Administration
+Notification - Generic
+
 
