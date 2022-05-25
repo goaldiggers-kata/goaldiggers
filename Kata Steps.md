@@ -13,13 +13,17 @@ Current Platform:
 # 3. Event Storming Session should map the process discovery 
 # 4. Identify Domain, Sub Domain, Generic and Core Domain and map the business capability mapping of each domain. Bounded Context Identification
 
-Non-Profit Organization
+Non-Profit Organization 
+  Micro-Frontends based on Organization Type
 
 Candidate
 
 Career Management
 
 Administration
+  Maintainence Screen to add Master data for Non-Profit Orgs
+  Mentor Management
+  
 
 Workflow Management for both Aspirants and Non-profit Organization - Core Domain
 
@@ -28,7 +32,8 @@ Networking Platform - Core Domain
 Notification - Generic 
   (Integration with Smart Devices)
   Integration with BOT
-  Machine Learning and AI: Counciling 
+  Machine Learning and AI: Counciling, Candidate Roadmap planning, 
+  
 
 
 
