@@ -16,7 +16,7 @@ Current Platform:
 
 Non-Profit Organization
 
-Aspirants
+Candidate
 
 Career Management
 
