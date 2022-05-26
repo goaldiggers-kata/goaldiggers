@@ -44,5 +44,4 @@ Contributors:
 
 Process Discovery:
 
-(images/processdiscovery.jpg)
-
+![Process Discovery](Images/processdiscovery.jpg)
