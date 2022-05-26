@@ -13,6 +13,12 @@ Current Platform:
 # 3. Event Storming Session should map the process discovery 
 # 4. Identify Domain, Sub Domain, Generic and Core Domain and map the business capability mapping of each domain. Bounded Context Identification
 
+# Domains
+
+Programs
+
+
+
 Non-Profit Organization 
   Micro-Frontends based on Organization Type
 
