@@ -21,7 +21,9 @@ Candidate
 Career Management
 
 Administration
+
   Maintainence Screen to add Master data for Non-Profit Orgs
+  
   Mentor Management
   
 
@@ -31,7 +33,9 @@ Networking Platform - Core Domain
 
 Notification - Generic 
   (Integration with Smart Devices)
+  
   Integration with BOT
+  
   Machine Learning and AI: Counciling, Candidate Roadmap planning, 
   
 
