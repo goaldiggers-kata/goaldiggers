@@ -5,20 +5,26 @@ by [Goal Diggers]
 ## Table of Contents
 
 ```text
-1.  Overview
-
-2.  Business Capabilities   
-
-3.  Vision  
-
-4.  High-Level Architecture
-
-5.  Domain Contexts  
-
-6.  Sequence Diagrams 
-
-7.  ADRs 
-
+Initial requirements
+	Primary goals
+	User requirements/Process Discovery 	
+	Stakeholders
+	Assumptions
+	Constraints
+	User stories
+	Definitions 
+Target Architecture		
+	DDD Bounded Context
+	component diagram 
+	container diagram
+	sequence diagram
+	system diagram
+	workflow diagram	
+	Significant Quality Attributes
+	Deployment diagram	
+	Risks
+	Security
+	ADRs
 ```
 
 ## 1. Overview
