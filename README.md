@@ -36,7 +36,7 @@ Architecture
 	High Level Component Diagram	
 	DDD Contextmap based on the process discovery
 		
-		Processes have to be broken into 2 parts. One is Registration and tracking the Process post Registration.
+		Processes have to be broken into 2 parts. One is Registration and tracking the Metrics, Roadmap milestones post Registration.
 				
 		Candidate Registration, Assesment, Mentor Assignment, Roadmap Planning, NPO Allocation to the Candidate
 		NPO Registration, Assesment, Roadmap Planning, NPO Allocation to the Candidate
