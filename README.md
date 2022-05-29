@@ -30,7 +30,7 @@ Miroboard Work : Link (Give the description what does the MIRO board contains)
 
 Functional Requirements: It should capture all the functional requirements and elaborate Process Discovery into detailed steps.
 
-Architecture
+Architecture (Capture Implicit and Explicit Architecture charectaristics 
 
 	High Level Context Diagram	
 	High Level Component Diagram	
@@ -43,11 +43,9 @@ Architecture
 		Candidate Performance Metrics
 		NPO Performance Metrics
 		NPO Capacity Planner
-		NPO Allocation Engine
+		NPO Allocation Engine		
 		
-		
-		NPO Networking HUB	
-		
+		NPO Networking HUB		
 		
 		Training Portal Integration
 		
@@ -65,31 +63,8 @@ Architecture
 	Deployment View
 	
 	ADRs
-		
-
-
-
-Initial requirements
-	Primary goals
-	User requirements/Process Discovery 	
-	Stakeholders
-	Assumptions
-	Constraints
-	User stories
-	Definitions 
-Target Architecture		
-	DDD Bounded Context
-	component diagram 
-	container diagram
-	sequence diagram
-	system diagram
-	workflow diagram	
-	Significant Quality Attributes
-	Deployment diagram	
-	Risks
-	Security
-	ADRs
-```
+	
+	Risks, Security
 
 ## 1. Overview
 
