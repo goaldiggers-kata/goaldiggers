@@ -5,6 +5,70 @@ by [Goal Diggers]
 ## Table of Contents
 
 ```text
+
+Diversity Cyber Council description
+
+Architecture KATA: Program Requirements
+
+Spotlight Platform Vision
+
+Team Members
+
+Assumptions
+
+Goals: Phase 1, Phase 2, Phase 3
+
+Miroboard Work : Link (Give the description what does the MIRO board contains)
+	
+	Actors and Stakeholders
+	Definitions
+	Domains
+	Core Domains
+	Generic Domains
+	Supporting Domains
+	High-Level Process Discovery
+
+Functional Requirements: It should capture all the functional requirements and elaborate Process Discovery into detailed steps.
+
+Architecture
+
+	High Level Context Diagram	
+	High Level Component Diagram	
+	DDD Contextmap based on the process discovery
+		
+		Processes have to be broken into 2 parts. One is Registration and tracking the Process post Registration.
+				
+		Candidate Registration, Assesment, Mentor Assignment, Roadmap Planning, NPO Allocation to the Candidate
+		NPO Registration, Assesment, Roadmap Planning, NPO Allocation to the Candidate
+		Candidate Performance Metrics
+		NPO Performance Metrics
+		NPO Capacity Planner
+		NPO Allocation Engine
+		
+		
+		NPO Networking HUB	
+		
+		
+		Training Portal Integration
+		
+		Administration
+		  Creating NPO and Candidate Assessments
+		  Creating Primary Data for the Registration Process
+		  Creating Rules for Decision Engine
+		  			
+	Microservices Event Driven Architecture for all the above process flows
+		Behaviour -> Sequence diagram
+		Related ADRs
+		
+	Hexagon Architecture
+	
+	Deployment View
+	
+	ADRs
+		
+
+
+
 Initial requirements
 	Primary goals
 	User requirements/Process Discovery 	
