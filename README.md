@@ -4,7 +4,7 @@ by [Goal Diggers]
 
 ## Table of Contents
 
-```text
+```
 
 Diversity Cyber Council description
 
@@ -65,6 +65,8 @@ Architecture (Capture Implicit and Explicit Architecture charectaristics
 	ADRs
 	
 	Risks, Security
+	
+```
 
 ## 1. Overview
 
