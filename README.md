@@ -41,7 +41,6 @@ The Spotlight platform requiremement can be found in the below link
 * BOT Integration: It helps in unregistered Candidates and Non Profit community to chat and under the process
 * ADR for Geo Location
 * ADR for Blob storage which will be used in the Networking HUB domain.
-* 
 
 ## Table of Contents
 
