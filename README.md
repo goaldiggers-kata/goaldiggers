@@ -25,7 +25,7 @@ Diversity Cyber Council is a 501c3 Non-Profit that serves under-represented demo
 
 The Spotlight platform requiremement can be found in the below link
 
-* [Program Requirements](https://learning.oreilly.com/live-events/architectural-katas/0636920054100/0636920072741/)
+* [Program Requirements](https://docs.google.com/document/d/1XjEpcGJ87xYg1eWN9eE0_tH7te5HcVAgPvoONLHY4qQ/edit?usp=sharing)
 
 ### Assumptions:
 
