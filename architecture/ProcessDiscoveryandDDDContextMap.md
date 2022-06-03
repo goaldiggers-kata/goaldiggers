@@ -111,6 +111,8 @@ Below are the **Supporting Domains** identified.
 	It has analytics to provide recommendations for the **Candidate and NPC based on their interests.**
 	
 ## Generic Domains 
-The core crux of the Generic Domain is to support the need of the Core and Supporting Domains. Below are the Generic Domains identified.
+The core crux of the Generic Domain is to support the need of the Core and Supporting Domains. Below are the Generic Domains identified. <br />
+
+
 ![Generic Domains](..//Images/GenericDomains.png)
 
