@@ -10,7 +10,7 @@ by [Goal Diggers]
 4. [Spotlight Platform Vision]
 5. [Assumptions]
 6. [Goals]
-7. [Process Discovery and DDD Context Map] 
+7. [Process Discovery and DDD Context Map](architecture/ProcessDiscoveryandDDDContextMap.md) 
 8. [Architecture]
 9. [Hexagon Architecture]
 10. [Deployment View]
