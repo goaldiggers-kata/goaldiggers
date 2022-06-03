@@ -107,9 +107,10 @@ Below are the **Supporting Domains** identified.
 - View Statistics/Analytics
 -	Operational Reports
 -	Decision Engine
--	It holds the primary data to manage the workflow of the Candidate and NPC registration process.
-	It has analytics to provide recommendations for the Candidate and NPC based on their interests.
+-	It holds the primary data to manage the workflow of the Candidate and **NPC registration process.**
+	It has analytics to provide recommendations for the **Candidate and NPC based on their interests.**
+	
 ## Generic Domains 
-The core crux of the Generic is to support the need of the Core and Supporting Domains. Below are the Generic Domains identified.
+The core crux of the Generic Domain is to support the need of the Core and Supporting Domains. Below are the Generic Domains identified.
 ![Generic Domains](..//Images/GenericDomains.png)
 
