@@ -375,7 +375,7 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 - **Supporting Subdomain:** Profile Creation, NPC Activity Tracker, Recommendation Engine, NPC Match Notification, NPC Shard Indexer, Match NPCs, NPC Activity Streams
 - **Generic Subdomains:** Platform Services, Status Manager, Notification Services
 
-### Non Profit Community Networking HUB Context view and Bounded Context
+#### Non Profit Community Networking HUB Context view and Bounded Context
 
 ![Non Profit Community Networking HUB Context view and Bounded Context](..//Images/HUBContext.PNG) 
 
@@ -414,7 +414,13 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 
 #### NPC Activity Tracker:
 - This service captures all the sequence of operations that gets executed by a user 
-	Post like, 	Tag, 	Posts, 	Accepts Notifications, 	Creating Channels, 	Voting Request for Community Service 
+   - Post like
+   - Tag
+   - Posts
+   - Accepts Notifications
+   - Creating Channels
+   - Voting Request for Community Service
+    
 - Each activity mentioned above will have Unique Microservices per Activity. Examples below
 - TAG: NPC Tag Activity Service
 - Posts: NPC POST Activity Service
