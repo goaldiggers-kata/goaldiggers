@@ -1,4 +1,4 @@
-# ADR 0010: Blobstore
+# ADR 0010: Blobstore (TO DO)
 
 ## Decision 
 
