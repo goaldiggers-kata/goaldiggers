@@ -8,8 +8,9 @@ Below is the introduction of the Team Members
 * [MVS Rama Krishna](https://www.linkedin.com/in/mvs-ramakrishna-a3a57225/)
 * [B Suman]
 * [Rama Surendra Babu G](https://www.linkedin.com/in/rama-surendra-babu-g-985a1913/)
-
 by [Goal Diggers]
+
+![Goal Diggers Architecture Kata](/Images/logo.png)
 ## Table of Contents
 1. Diversity Cyber Council Description
 2. Team Members
