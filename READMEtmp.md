@@ -14,18 +14,7 @@ by [Goal Diggers]
 8. [Architecture](architecture/ArchitectureOverview.md) 
 9. [Hexagon Architecture](architecture/HexagonArchitecture.md)
 10. [Deployment View](architecture/DeploymentView.md)
-11. ADRs
-* [Cell Based Architecture](ADRs/ADR001_CellBasedArchitecture.md)
-* [DDD and Bounded Context](ADRs/ADR002_DDDandBoundedContext.md)
-* [Microservices Architecture with Containerization](ADRs/ADR003_MicroservicesarchitecturewithContainerization.md)
-* [EventDrivenArchitecture](ADRs/ADR004_EventDrivenArchitecture.md)
-* [Spaced BasedA rchitecture](ADRs/ADR005_SpacedbasedArchitecture.md)
-* [Sharding](ADRs/ADR006_Sharding.md)
-* [GraphDB](ADRs/ADR007_GraphDB.md)
-* [Geo Services Integration.md](ADRs/ADR008_GeoServicesIntegration.md)
-* [Streams](ADRs/ADR009_Streams.md)
-* [Blobstore](ADRs/ADR010_Blobstore.md)
-* [OAuth](ADRs/ADR011_OAuth.md)
+11. [ADRs](ADRs/ADRs.md) 
 13. [Risks, Security]
 14. References
 * [Miro - Process Discovery](https://miro.com/app/board/uXjVOySr1RA=/?share_link_id=321299907325)
