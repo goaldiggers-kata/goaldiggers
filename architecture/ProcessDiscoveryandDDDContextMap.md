@@ -96,12 +96,14 @@ Below are the **Supporting Domains** identified.
 
 **Candidate Metrics Management**
 - It is the primary tracker of the **candidate, which is maintained by the Mentor.**
-- All the cadence meetings, touchpoints, general parameters to measure the NPC are all captured in the domain. This domain uses the capabilities of the Status Management Subdomain. 
--	It also gets data from the Candidate Roadmap Tracker and same gets used for the Candidate performance.
--	Gets data from Platform Management to derive the metrics
-Status Management
+- All the **cadence meetings, touchpoints, general parameters to measure the NPC are all captured in the domain. This domain uses the capabilities of the Status Management Subdomain.** 
+- It also gets data from the **Candidate Roadmap Tracker and same gets used for the Candidate performance.**
+- **Gets primary data from Platform Management to derive the metrics to measure the Candidate.**
+
+**Status Management**
 - It’s a supporting domain which provides the status for both the candidate and NPC.
-Reporting
+
+**Reporting**
 - View Statistics/Analytics
 -	Operational Reports
 -	Decision Engine
