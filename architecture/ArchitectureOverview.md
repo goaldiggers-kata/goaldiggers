@@ -86,185 +86,256 @@ Each cell has a bounded context and solves the problem statement with the help o
 - If the process fails, the container ends, and the orchestrator takes over. The orchestrator will have how many instances should be running and if one fails, the orchestrator will create another container instance to replace the failed process.
 
 ###  Domain Context Map to Microservices Mapping
-This section gives the mapping for the subdomains, process specific component view and the sequence diagram for the below business processes.
 
-- Candidate Registration
-- Candidate Onboarding onto Spotlight platform
-- Non Profit Community Registration
-- Non Profit Onboarding onto Spotlight platform
-- Non Profit Networking HUB
+This section gives the **mapping for the Subdomains, Process specific component view and the Sequence diagram for the below business processes.**
+
+- **Candidate Registration**
+- **Candidate Onboarding onto Spotlight platform**
+- **Non Profit Community Registration**
+- **Non Profit Onboarding onto Spotlight platform**
+- **Non Profit Networking HUB**
 
 ###  Candidate Registration
-Candidate is the primary actor for the Spotlight Platform to avail the program offerings provided by the Non Profit Communities. As part of the process discovery we have derived the below flow.
+
+#### Process Discovery:
+**Candidate is the primary actor for the Spotlight Platform** to avail the program offerings provided by the Non Profit Communities. As part of the process discovery we have derived the below flow.
+
 The below representation shows the high levels steps which the candidate has to undergo using the registration process. 
-Every milestone of the Candidate Registration process has been captured in the Status Management tile.
+
+- **Every milestone of the Candidate Registration process has been captured in the Status Management tile provided by the Status Managment Subdomain.**
 - The registration process is initiated by the candidate logging into the Spotlight platform, he can do that using the web or a mobile platform.
 - This is the initial step for the candidate, it starts with registration and ends with NPC assignment request.
-- Based on the Candidate’s Program offering preferences the user interface gets changed
+- **Based on the Candidate’s Program offering preferences the user interface gets changed dynamically**
 - Candidate get notified with email to complete the profile after the mail id/mobile gets validated.
 - Once the profile is created, administrator will approve and Candidate Intake ID is assigned.
 
 ![CandidateRegistrationProcessDiscovery](..//Images/CandidateRegistrationProcessDiscovery.png) 
 
-Output
-- Complete and Intake Assigned.
+#### **Output**:
+
+- Registration Complete and Intake Assigned.
  
-Subdomain and Bounded Context 
+#### Subdomain and Bounded Context:
+
 Below are the Core, Generic and Supporting Subdomains which get involved for the candidate registration process.
-- Subdomain: Candidate Onboarding Community
-- Subdomain: Candidate Roadmap Tracker 
-- Subdomains: Platform Services, Status Manager, Notification Services  
-- Candidate Registration Context view and bounded context
+
+- **Core Subdomain:** Candidate Onboarding Community
+- **Supporting Subdomain:** Candidate Roadmap Tracker 
+- **Generic Subdomains:** Platform Services, Status Manager, Notification Services  
+
+ **Candidate Registration Context view and bounded context**
  
 ![CandidateOnboardingContextviewandboundedcontext](..//Images/CandidateOnboardingContextviewandboundedcontext.png)
 
+**Candidate Registration Sequence Diagram**
+
 ![Candidate Registration Sequence Diagram](..//Images/CandidateRegistrationSequenceDiagram.png)
   
-Primary actors involved in the Candidate Registration process are Candidate and Administration. It is a Single Page Application for Web Application and can be extended to the mobile platform also. It can be developed using React or Angular.
-The above image depicts overall communication style used for the candidate registration. It shows all the subdomains, bounded context, microservices, events, API communication, notification services.
-- ADRs
+Primary actors involved in the **Candidate Registration process are Candidate and Administration.** 
+
+- It is a Single Page Application for Web Application and can be extended to the mobile platform also. 
+- It can be developed using React or Angular.
+- The above image depicts overall communication style used for the candidate registration. It shows all the subdomains, bounded context, microservices, events, API communication, notification services.
+
+#### ADRs:
 Key Patterns and ADRs identified for the Candidate Registration process
 - BFF
 - CQRS
 
+###  Candidate Onboarding Process:
 
-###  Candidate Onboarding Process
-Candidate and Mentor both are primary actors for the candidate onboarding process. 
-Candidate has an intake and waiting for the Mentor to onboarding onto the platform. As part of the registration the candidate has just raised the request for Non Profit Community offerings and got the Intake ID assigned. Once the candidate gets onboarded completely, mentor will assign him the NPC based on the assessment results.
-The below representation shows the high level steps which both the candidate and mentor have to do in order to complete the onboarding process. 
-Every milestone of the Candidate Onboarding process has been captured in the Status Management tile.
-Prerequisite: Candidate Intake ID Assigned.
-High level steps and Process discovery
+- **Candidate and Mentor both are primary actors for the candidate onboarding process.
+- Candidate has an intake and waiting for the Mentor to onboard him/her onto the platform.
+- As part of the registration the candidate has just raised the request for Non Profit Community offerings and got the Intake ID assigned.
+- Once the candidate gets onboarded completely, mentor will assign him the NPC based on the assessment results.
+- The below representation shows the high level steps which both the candidate and mentor have to undergo in order to complete the onboarding process. 
+- **Every milestone of the Candidate Onboarding process has been captured in the Status Management tile.**
+
+#### Prerequisite: Candidate Intake ID Assigned.
+
+#### High level steps and Process discovery
+
 - The onboarding process gets initiated once the candidate completes the registration process.
   ![CandidateOnboardingProcess](..//Images/CandidateOnboardingProcess.png) 
 <br />
-Output
-- Assigned.
+
+#### Output:
+- Mentor Assigned.
 - Candidate and Mentor Meeting complete
 - Roadmap Created
 - Non Profit Community Assigned and Program assigned.
 
-Subdomain and Bounded Context 
-Below are the Core, Generic and Supporting Subdomains which get involved for the candidate onboarding process.
-- Core Subdomain: Candidate NPC Matching
-- Supporting Subdomain: Candidate Roadmap Tracker
-- Generic Subdomains: Platform Services, Status Manager, Notification Services
+#### Subdomain and Bounded Context:
 
-- Candidate Registration Context view and bounded context 
+Below are the **Core, Generic and Supporting Subdomains*** which get involved for the candidate onboarding process.
+
+- **Core Subdomain:** Candidate NPC Matching
+- **Supporting Subdomain:** Candidate Roadmap Tracker
+- **Generic Subdomains:** Platform Services, Status Manager, Notification Services
+
+#### Candidate Registration Context view and bounded context 
+
 ![Candidate Registration Context view and bounded context](..//Images/CandidateRegistrationContextviewandboundedcontext.png) 
 <br />
-Candidate Registration Sequence Diagram
+
+#### Candidate Registration Sequence Diagram
 
 ![Candidate Registration Sequence Diagram](..//Images/CandidateRegistrationSequenceDiagram.png) 
  
-Key Patterns and ADRs identified for the Candidate Registration process
+#### Key Patterns and ADRs identified for the Candidate Registration process
 - BFF
 - CQRS
 
 ###  Candidate Roadmap Tracker
-This is a critical process in the platform. The primary actor for this process will be Candidate and the Mentor. All the critical milestones of the candidate which were aligned during the initial meetings will be updated by the mentor based on the regular assessments. 
-Below is the high level process discovery.
+This is a critical process in the platform. 
+**The primary actor for this process will be Candidate and the Mentor.** All the critical milestones of the candidate which were aligned during the initial meetings will be updated by the mentor based on the regular assessments.
+
+#### Below is the high level process discovery.
+
 ![Candidate Roadmap Tracker](..//Images/CandidateRoadmapTrackerProcess.png) 
 
-- Candidate Roadmap Tracker helps the mentor to capture the program assessment results
+- **Candidate Roadmap Tracker** helps the mentor to capture the program assessment results
 - Candidate Roadmap Tracker capture all the regular meeting and provides all the data to the metrics management
-- Based on the progress made by the candidate the next available NPC services should get assigned. 
-- Candidate Metrics Management capture all the results and give the rating based on the benchmark defined by the Platform Management. Marks will be defined.
+- Based on the progress made by the candidate the next available **NPC services should get assigned.**
+- **Candidate Metrics Management** capture all the results and give the rating based on the benchmark defined by the Platform Management. Marks will be defined.
 
-Prerequisites/Inputs
+#### Prerequisites/Inputs:
+
 - Candidate and NPC should have been onboarded
 - Candidate Mentor Assigned
 - Program Offering Assigned to the Candidate
-Candidate Roadmap Tracking process
+
+#### Candidate Roadmap Tracking process:
+
 ![Candidate Roadmap Tracking process](..//Images/CandidateRoadmapTrackingprocess.png) 
 
-Subdomain and Bounded Context 
+#### Subdomain and Bounded Context: 
+
 Below are the Core, Generic and Supporting Subdomains which get involved for the candidate onboarding process.
-- Core Subdomain: NA
-- Supporting Subdomain: Candidate Metrics Management, Candidate Roadmap Tracker
-- Generic Subdomains: Platform Services, Status Manager, Notification Services
-Key Patterns and ADRs identified for the Candidate Registration process
+
+- **Core Subdomain:** NA
+- **Supporting Subdomain:** Candidate Metrics Management, Candidate Roadmap Tracker
+- **Generic Subdomains:** Platform Services, Status Manager, Notification Services
+
+#### Key Patterns and ADRs identified for the Candidate Registration process:
+
 - Graph DB
 - BFF
 - CQRS
 
+###  Non Profit Community Registration
 
-###  Non Profit Community Registration 
-Non Profit Community is the primary actor for the Spotlight Platform. They register for program offerings or services which they can provide to the onboarded candidates. As part of the process discovery we have derived the below flow.
-The below representation shows the high levels steps which the NPC has to undergo during the registration process. 
-Every milestone of the NPC Registration process has been captured in the Status Management tile.
+**Non Profit Community is the primary actor for the Spotlight Platform.** 
+
+- They register for program offerings or services which they can provide to the onboarded candidates.
+- As part of the process discovery we have derived the below flow.
+- The below representation shows the high levels steps which the NPC has to undergo during the registration process. 
+- Every milestone of the NPC Registration process has been captured in the Status Management tile.
 - The registration process is initiated by the NPC logging into the Spotlight platform, he can do that using the web or a mobile platform.
 - This is the initial step for the NPC, it starts with registration and ends with NPC assignment request.
 - Based on the NPC’s Program offering preferences on the user interface gets changed. This is a dynamic user interface.
 - NPC gets notified with email to complete the profile after the mail id/mobile gets validated.
 - Once the profile is created, administrator will approve and the Intake ID is assigned.
-Prerequisites/Input: NA
+
+#### Prerequisites/Input: NA
+
+#### Non Profit Community Registration Process Discovery
 
 ![HighlevelstepsandProcessdiscovery](..//Images/HighlevelstepsandProcessdiscovery.png) 
 
-Output
+#### Output:
 - Assessment Complete and Intake Assigned.
-Subdomain and Bounded Context 
+
+#### Subdomain and Bounded Context:
+
 Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
-- Core Subdomain: NPC Onboarding Community
-- Supporting Subdomain: NPC Assessment Engine
-- Generic Subdomains: Platform Services, Status Manager, Notification Services
+
+- **Core Subdomain:** NPC Onboarding Community
+- **Supporting Subdomain:** NPC Assessment Engine
+- **Generic Subdomains:** Platform Services, Status Manager, Notification Services
+
+#### Non Profit Community Registration Sequence Diagram
+
 ![Non-Profit Community Registration Process](..//Images/Non-ProfitCommunityRegistrationProcess.png) 
 
-Key Patterns and ADRs identified for the Candidate Registration process
+#### Key Patterns and ADRs identified for the Candidate Registration process
+
 - Micro Frontend
 - BFF
 - CQRS
 
-###  Non Profit Community Networking HUB 
-NPC, Community Leader and Administrator are the primary actors for onboarding the NPC onto the Spotlight Process.
-NPC has an intake and waiting for the Community Leader to onboard the NPC onto the platform. As part of the registration the NPC has just raised the request against the service offerings and got the Intake ID assigned. Once the NPC gets onboarded completely, Community Leader will assign him the candidates based on the NPC Capacity, Bandwidth and roadmap which the NPC gets aligned during the initial meeting.
-The below representation shows the high level steps which both the NPC and Community have undergo to complete the onboarding process. 
+###  Non Profit Community Onboarding Process 
 
-Every milestone of the NPC Onboarding process has been captured in the Status Management tile.
-Prerequisites/Input
+**NPC, Community Leader and Administrator are the primary actors for onboarding the NPC onto the Spotlight Process.**
+
+- NPC has an intake and waiting for the Community Leader to onboard the NPC onto the platform.
+- As part of the registration the NPC has just raised the request against the service offerings and got the Intake ID assigned. 
+- Once the NPC gets onboarded completely, Community Leader will assign him the candidates based on the NPC Capacity, Bandwidth and roadmap which the NPC gets aligned during the initial meeting.
+- The below representation shows the high level steps which both the NPC and Community have undergo to complete the onboarding process. 
+- Every milestone of the NPC Onboarding process has been captured in the Status Management tile.
+
+#### Prerequisites/Input
+
 - NPC Intake ID Assigned.
+
+#### Prerequisites/Input
+
+#### Non Profit Community Onboarding Process Discovery
 
 ![High level Steps and Process Discovery](..//Images/HighlevelstepsandProcessdiscovery.png) 
 
-Output:
+#### Output:
+
 - NPC gets onboarded onto the Spotlight Platform
 - Training will get assigned to the NPC and it is mandate for him to complete. 
-Subdomain and Bounded Context 
+
+#### Subdomain and Bounded Context:
+
 Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
-- Core Subdomain: Candidate and NPC Matching
-- Supporting Subdomain: NPC Roadmap Tracker
-- Generic Subdomains: Platform Services, Status Manager, Notification Services
+
+- **Core Subdomain:** Candidate and NPC Matching
+- **Supporting Subdomain:** NPC Roadmap Tracker
+- **Generic Subdomains:** Platform Services, Status Manager, Notification Services
+
+#### Non Profit Community Onboarding Sequence Diagram
 
 ![Non-Profit Community Onboarding Sequence Flow](..//Images/Non-ProfitCommunityOnboardingSequenceFlow.png) 
 
-Key Patterns and ADRs identified for the Candidate Registration process
+#### Key Patterns and ADRs identified for the Candidate Registration process:
+
 - Micro Frontend
 - BFF
 - CQRS
 
 ###  NPC Roadmap Tracker
-This is a critical process in the platform. The primary actor for this process will be Community Leader, NPC and Administrator. All the critical milestones of the NPC which were aligned during the initial meetings will be updated by the NPC based on the regular assessments. 
-NPC Roadmap Tracker Process discovery
-![](..//Images/.png) 
+This is a critical process in the platform. 
 
+- **The primary actor for this process will be Community Leader, NPC and Administrator.** 
+- All the critical milestones of the NPC which were aligned during the initial meetings will be updated by the NPC based on the regular assessments. 
 - NPC Roadmap Tracker captures all the regular meeting and provides all the data to the NPC Metrics management
 - NPC Metrics Management plays a critical and it has Decision Engine will validates assigns the NPC Stack ranking.
 - Based on the progress made by the NPC the next available NPC services should get assigned. 
 
-Output
+#### Output:
+
 - Completion of Program Offering services per candidate
 - Helps in NPC Capacity Planning 
 - Administrator will be able to assess the bandwidth of the NPC
-Subdomain and Bounded Context 
+
+#### Subdomain and Bounded Context:
+
 Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
-- Core Subdomain: NA
-- Supporting Subdomain: NPC Roadmap Tracker, NPC Metrics Management
-- Generic Subdomains: Platform Services, Status Manager, Notification Services
-Non-Profit Community Roadmap Tracker Sequence Flow
+
+- **Core Subdomain:** NA
+- **Supporting Subdomain:** NPC Roadmap Tracker, NPC Metrics Management
+- **Generic Subdomains:** Platform Services, Status Manager, Notification Services
+
+#### Non-Profit Community Roadmap Tracker Sequence Flow:
+
 ![Non-Profit Community Roadmap Tracker Sequence Flow](..//Images/Non-ProfitCommunityRoadmapTrackerSequenceFlow.png) 
 
-Key Patterns and ADRs identified for the Candidate Registration process
+#### Key Patterns and ADRs identified for the Candidate Registration process:
+
 - Graph DB
 - BFF
 - CQRS
@@ -272,7 +343,8 @@ Key Patterns and ADRs identified for the Candidate Registration process
 
 ###  Non Profit Community Networking HUB
 
-The section covers all the functionalities and system architecture for the Network HUB. From the strategy perspective as Networking HUB is a core subdomain our approach towards architecture is different.
+The section covers all the functionalities and system architecture for the Network HUB. From the strategy perspective as Networking HUB is a core subdomain our approach towards architecture is different. 
+
 Below is the process discovery which was done as part of the event storming sessions.
 
 Non Profit Community Networking HUB Process Discovery
