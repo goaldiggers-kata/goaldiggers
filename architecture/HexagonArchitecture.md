@@ -1,2 +1,2 @@
 Hexagon Architecture
-![Spotlight Context Diagram](..//Images/SpotlightContextDiagram.png)
+![Spotlight Context Diagram](..//Images/Hexagon.PNG)
