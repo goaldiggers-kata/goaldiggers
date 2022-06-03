@@ -29,17 +29,28 @@ The Spotlight platform requiremement can be found in the below link
 
 ### Assumptions:
 
+* Community Leader will help and give all the support to the Non Profit Community after Intake gets created. 
+* Mentor should be aware and have complete knowledge of the Non Profit Community Service Offerings. This will help is assigning or map the services provided by the Non Profit Community to the candidates.
+* Community Leaders will work with Non Profit Community and get aligned on the programs
+* Administrator is the final authority and he can also play the role of the community leader. Where as the community leaders cannot be an Administrator.
+* Assessment which the candidate undergoes is either a test or a questionaire to assess the support needed by the candidate
+
+### Backlog and Recommendation for Future Phase:
+
+* Methodology for Architectural documentation
+* BOT Integration: It helps in unregistered Candidates and Non Profit community to chat and under the process
+* ADR for Geo Location
+* 
+
 ## Table of Contents
 
-
-6. [Goals](architecture/Goals.md)
-7. [Process Discovery and DDD Context Map](architecture/ProcessDiscoveryandDDDContextMap.md) 
-8. [Architecture](architecture/ArchitectureOverview.md) 
-9. [Hexagon Architecture](architecture/HexagonArchitecture.md)
-10. [Deployment View](architecture/DeploymentView.md)
-11. [ADRs](ADRs/ADRs.md) 
+1. [Process Discovery and DDD Context Map](architecture/ProcessDiscoveryandDDDContextMap.md) 
+2. [Architecture](architecture/ArchitectureOverview.md) 
+3. [Hexagon Architecture](architecture/HexagonArchitecture.md)
+4. [Deployment View](architecture/DeploymentView.md)
+5. [ADRs](ADRs/ADRs.md) 
 13. [Risks, Security]
 14. References
-* [Miro - Process Discovery](https://miro.com/app/board/uXjVOySr1RA=/?share_link_id=321299907325)
-* [C4 Model](https://c4model.com/)
-* [Cell Architecture](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md
+     * [Miro - Process Discovery](https://miro.com/app/board/uXjVOySr1RA=/?share_link_id=321299907325)
+     * [C4 Model](https://c4model.com/)
+     * [Cell Architecture](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md)
