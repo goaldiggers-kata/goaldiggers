@@ -368,6 +368,13 @@ Non Profit Community Networking HUB Process Discovery
 - Candidate can show up interest to participate and contribute in NP Community services but this needs Mentor approval.
 - Support for multiple languages if the Spotlight platform expands the services globally.
 
+#### Subdomain and Bounded Context:
+
+Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
+- **Core Subdomain:** Networking HUB
+- **Supporting Subdomain:** Profile Creation, NPC Activity Tracker, Recommendation Engine, NPC Match Notification, NPC Shard Indexer, Match NPCs, NPC Activity Streams
+- **Generic Subdomains:** Platform Services, Status Manager, Notification Services
+
 ### Non Profit Community Networking HUB Context view and Bounded Context
 
 ![Non Profit Community Networking HUB Context view and Bounded Context](..//Images/Non-ProfitCommunityNetworkingHUBContextviewandBoundedContext.png) 
@@ -381,13 +388,6 @@ Non Profit Community Networking HUB Process Discovery
 - The HUB Worker queries on the Likes data and sends the match notification to both the NPC users using Web Sockets.
 
 **Note: We have just given “Like”one such activity which a NPC does on the HUB.**
- 
-#### Subdomain and Bounded Context:
-
-Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
-- **Core Subdomain:** Networking HUB
-- **Supporting Subdomain:** Profile Creation, NPC Activity Tracker, Recommendation Engine, NPC Match Notification, NPC Shard Indexer, Match NPCs, NPC Activity Streams
-- **Generic Subdomains:** Platform Services, Status Manager, Notification Services
 
 #### NPC Profile Creation: For the first time user. 
 
@@ -446,29 +446,32 @@ HUB Recommendation Engine: It is core service which sends notifications, recomme
 #### NPC Recommendation Engine
 ![NPC Recommendation Engine](..//Images/NPCRecommendationEngine.png) 
 
-Shard Indexer: This service provides the data from the Shard Graph DB. 
+#### Shard Indexer: This service provides the data from the Shard Graph DB. 
 
 - This process will have two different set of services
 - One pool of services which will keep helping the 
-  - NPC Match Notification Service: For provide the match notifications
-  - Match NPCs: For providing match recommendations.
+  - **NPC Match Notification Service:** For provide the match notifications
+  - **Match NPCs:** For providing match recommendations.  
 - For reads, the Indexer service implements queries independently
 - For each reading activity we will have a separate instance and whereas for the transactional area we will have separate service. This implementation is primarily because the demands for the queries are drastically different. 
-This domain holds Shard DB Architecture which is very critical to handle the traffic. The proposed architecture is to divide data into horizontal partitions that are organized into various servers. Primary reasons to shard
+- This domain holds **Shard DB Architecture** which is very critical to handle the traffic. The proposed architecture is to divide data into horizontal partitions that are organized into various servers. Primary reasons to shard
 - Data will be siloed into separate instances based on different NPC activities
   - By Region
   - Action  	
   - By Service Offerings
   - By Likes
-  -  Events
-  -  To minimize the latency
-Neo4J Fabric is the solution for graph sharding which allows the NPCs to break the graphs based on the relationships. It allows to store smaller graphs and store them in separate databases. 
+  - Events
+  - To minimize the latency
+  
+**Neo4J Fabric** is the solution for graph sharding which allows the NPCs to break the graphs based on the relationships. It allows to store smaller graphs and store them in separate databases. 
 
 ### Fabric Causal Cluster and No single point of failure
 ![Fabric Causal Cluster and No single point of failure](..//Images/FabricCausalClusterandNosinglepointoffailure.png) 
 
-Architecture proposed is separating the data stores into shards and placing them based on the activity into separate graph DBs. This gives flexibility any combination of inhouse or cloud to fit the business needs and requirements. 
-The above architecture representation has 2 coordinated shards which will give us always high availability and We have separated the fabric database to solely handle all of the load and processing of requests.
-Data Division
+- Architecture proposed is separating the data stores into shards and placing them based on the activity into separate graph DBs. 
+- This gives flexibility any combination of inhouse or cloud to fit the business needs and requirements. 
+- The above architecture representation has 2 coordinated shards which will give us always high availability and We have separated the fabric database to solely handle all of the load and processing of requests.
+
+#### Data Division
 - As part of the analysis the context and the data definitions will be clearly defined and how the data has to be modeled so that we can have subgraphs.
 - All the shards will be divided based on activity or on location. 
