@@ -18,13 +18,16 @@ In the below representation we have 3 dimensions but we will be adopting **2 Y a
 - Organization scalability will increase
 - Fault Isolation and many more
 
-**Z-Axis:** Networking HUB is a NFC networking HUB and to make the domain scalable Z Axis helps us to Shard the date. Y axis allows to split dissimilar things and Z-axis allows segmentation of “similar” things. Examples are already defined in the Non Profit Community Networking HUB and the Shards will be 
+**Z-Axis:** Networking HUB subdomain on the spotlight platfomr gives capability of NPC to network. The implicit characteristic is this HUB to make the scalable. 
 
-- By Region
-- Action
-- By Service Offerings
-- By Likes
-- Events
-- To minimize the latency
+- Z Axis helps us to Shard the data. 
+- Y axis allows to split dissimilar things and Z-axis allows segmentation of “similar” things. Examples are already defined in the Non Profit Community Networking HUB and the Shards will be 
+
+    - By Region
+    - Action
+    - By Service Offerings
+    - By Likes
+    - Events
+    - To minimize the latency
 
 ![Spotlight Context Diagram](..//Images/ScaleCube.PNG)
