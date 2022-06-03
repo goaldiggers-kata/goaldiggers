@@ -1,2 +1,2 @@
 Deployment View
-![Spotlight Context Diagram](..//Images/SpotlightContextDiagram.png)
+![Spotlight Context Diagram](..//Images/ScaleCube.PNG)
