@@ -348,7 +348,7 @@ The section covers all the functionalities and system architecture for the Netwo
 Below is the process discovery which was done as part of the event storming sessions.
 
 Non Profit Community Networking HUB Process Discovery
-![NPC Networking Process HUB](..//Images/NetworkingHubProcess.PNG.png) 
+![NPC Networking Process HUB](..//Images/NetworkingHubProcess.PNG) 
 
 #### High Level In Scope
 - NPC Profile will be created in the Network HUB once the NPC Roadmap Tracker sub domain posts an Event for Create Profile
@@ -377,7 +377,7 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 
 ### Non Profit Community Networking HUB Context view and Bounded Context
 
-![Non Profit Community Networking HUB Context view and Bounded Context](..//Images/Non-ProfitCommunityNetworkingHUBProcessDiscovery.png.png) 
+![Non Profit Community Networking HUB Context view and Bounded Context](..//Images/Non-ProfitCommunityNetworkingHUBProcessDiscovery.png) 
 
 - There will be a stack of microservices behind the API gateway, which serve the Non Profit Community user requests. 
 - As soon the NPC user logins to the Network site for the first time, it invokes NPC Profile API hosted by the “Non Profit Community Core subdomain” will be invoked to add to the corresponding sharded index so that the NPC shows up in recommendations of the nearby NPC members of the Spotlight platform. 
