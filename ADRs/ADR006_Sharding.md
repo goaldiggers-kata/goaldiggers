@@ -22,11 +22,12 @@ To minimize the latency
 
 ## Rationale 
 
-
-
+The rationale behind is seperation based on the NPC activities, as well and placing them is different graph nodes. The fabric database will solely handle all of the load and it has 2 instances active/active it gives greater flexibility is processing.
 
 ## Status
 Proposed. 
 
 ## Consequences
+
+Cost of the infrastructure. Primarily in the initial phases the recommendation will be use on DBMS node hosting all the activities but later based on the spike of user concurrency the investment on the infrastructure can be increased. The initial gives flexibility to expand later based on demand.
 
