@@ -11,11 +11,11 @@ As part of the Domain discovery sessions, we have analyzed Spotlight Platform bu
 Each subdomain resembles a set of interrelated, coherent use cases. These are defined based on the business domain and the functional requirements. In the discovery session the team has analyzed all the functional requirements to identify these subdomains.
 
 ## Actors and Definitions
-![Actors and Definitions](Images/ActorsandDefinitions.png)
+![Actors and Definitions](..//Images/ActorsandDefinitions.png)
 
 ## Core Domains 
 The main asset of the Spotlight Platform is onboarding the Candidate and Non Profit Community. Once they both get onboarded the Non-Profit community has to be tagged to the Candidate to avail the Service offerings to achieve the career goal. 
-![Core Domains](Images/CoreDomains.png)
+![Core Domains](..//Images/CoreDomains.png)
 
 - Domain: Spotlight Platform
 The Spotlight Platform is a sustained effort to amass a coalition of nonprofits in order to address specific needs within the communities we serve by leveraging a centralized platform as the base of operations to collaborate and make a collective impact.
@@ -36,7 +36,7 @@ For now primarily it is focused on United States but later based on the expansio
 ## Supporting Domains
 The core crux of the Supporting Domain is to support the need of the Core Domains. It might also be coupled with Generic Domain. 
 
-![Supporting Domains](Images/Supporting%20Domains.png)
+![Supporting Domains](..//Images/Supporting%20Domains.png)
 
 Below are the Supporting Domains identified.
 
@@ -95,5 +95,5 @@ Reporting
 	It has analytics to provide recommendations for the Candidate and NPC based on their interests.
 ## Generic Domains 
 The core crux of the Generic is to support the need of the Core and Supporting Domains. Below are the Generic Domains identified.
-![Generic Domains](Images/GenericDomains.png)
+![Generic Domains](..//Images/GenericDomains.png)
 
