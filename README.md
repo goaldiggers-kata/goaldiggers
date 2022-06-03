@@ -21,11 +21,17 @@ Diversity Cyber Council is a 501c3 Non-Profit that serves under-represented demo
 * It is offering 3 courses and it helps the underserved communities to register to these courses with a standard form. After the aspirant gets registered he gets notified on mail.
 * In addition the platform also allows the non-profit organizations to register and help in facilitating the education, training and staffing of underrepresented groups in cybersecurity. For now they can donate, or partner to provide apprentice program on cyber security or become an employer partner or a strategic partner.
 
+### Program Requirements:
+
+The Spotlight platform requiremement can be found in the below link
+
+* [Program Requirements](https://learning.oreilly.com/live-events/architectural-katas/0636920054100/0636920072741/)
+
+### Assumptions:
 
 ## Table of Contents
-3. [Architecture KATA: Program Requirements](architecture/ProgramRequirements.md)
-4. [Spotlight Platform Vision](architecture/SpotlightPlatformVision.md)
-5. [Assumptions](architecture/Assumptions.md)
+
+
 6. [Goals](architecture/Goals.md)
 7. [Process Discovery and DDD Context Map](architecture/ProcessDiscoveryandDDDContextMap.md) 
 8. [Architecture](architecture/ArchitectureOverview.md) 
