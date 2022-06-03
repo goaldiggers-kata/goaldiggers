@@ -6,8 +6,6 @@ In any high volume Domains will a large concurrent user loads Space Based Archit
 
 We will be using Space based Architecture as this domain demands Elasticity, Performance, Reliability and Scalability. These are the driving attributes and main advantages of this architecture style. This architecture style removes the Database constraint. Additionally to compliment this proposal we will be using Graph DB and it will be sharded.
 
-## Rationale 
-
 ## Status
 Proposed. 
 
