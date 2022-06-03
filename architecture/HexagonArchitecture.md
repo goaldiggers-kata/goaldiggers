@@ -1,6 +1,6 @@
 ## Hexagon Architecture
 
-The Architecture picks up the DDD layer and incorporates them into layers. These layers bring organized way to implement the business logic. Every Hexagon is a subdomain by itself. 
+The Architecture picks up the DDD layer and incorporates them into layers. These layers bring organized way to implement the business logic. Every Hexagon is a subdomain by itself. Every subdomain implementation will adpot Hexagon Architecture
 
 ### Application Layer:
 The business processes that get triggered by the actors are in our core Application Layer. In the application layer we have class 0 services implies highly available services. 
