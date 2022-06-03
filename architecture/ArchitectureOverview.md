@@ -429,12 +429,14 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 #### NPC Activity Tracker on NPC Network HUB
 ![NPC Activity Tracker on NPC Network HUB](..//Images/NPCActivityTrackeronNPCNetworkHUB.png) 
 
-NPC Collaboration Request: This is a unique activity which helps the NPCs to collaborate.
+#### NPC Collaboration Request: 
+This is a unique activity which helps the NPCs to collaborate.
 - NPC A sends collaboration Request to NPC B.
 - Collaboration request is posted into the unique collaboration stream and same gets notified to NPC B
 - If NPC B accepts the collaboration request both get tagged.
 
-HUB Recommendation Engine: It is core service which sends notifications, recommendations, matching requests and customizes the user content on the page. It’s a background thread gets domain events all the services.
+#### HUB Recommendation Engine: 
+It is core service which sends notifications, recommendations, matching requests and customizes the user content on the page. It’s a background thread gets domain events all the services.
 - Every Activity which the user does on the Network HUB it forwards the request to the Shard Indexer service.
 - Shard Indexer service exposes an API
 - Once the API is invoked it determines which shard to be queried based on the activity done by the user.
