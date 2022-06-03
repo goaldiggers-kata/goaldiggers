@@ -18,7 +18,7 @@
 To solve the primary business problem our approach was to identify a domain model that reflects the Spotlight platform vision. We have used DDD and Bounded Context patterns. Each bounded context will have fleet of microservice and will have the flexibility of employing different patterns and they will have different responsibilities to solve the Domain problem. 
 Proposal is to use Cell Based Architecture which gives Spotlight platform to be build as a decentralized cloud native application. Each Cell represents a Subdomain’s bounded context which can be independently deployable, manageable, and observable. It implies the Core Subdomains below can have their independent journey. 
 - Candidate Onboarding Community
--	Non Profit Community 
+- Non Profit Community 
 - Candidate and NPC Matching
 - Networking HUB
 
@@ -30,13 +30,11 @@ Proposal is to use Cell Based Architecture which gives Spotlight platform to be 
 - Modularity, is the idea that components of the architecture are versioned, replicable, and have well-defined interfaces. It is about exposing the right interfaces into a versioned system as well as hiding the details of the internal workings. Business mirroring with domain-driven design (DDD) is the foundation for defining modularity at the macro level.
 - Composability, is about creating a recursive and uniform architecture where new components and capabilities add to the overall platform in a seamless way. For example, adding business logic in a web page makes it hard for other systems to build on top of that logic, whereas adding the same logic to an API allows web applications, mobile apps, and other server-based systems to access that logic.
 - Governance, is about building managed, monitored, resilient systems and ensuring that organizational policies are enforced.
-- Extendibility
--	Agility, 
--	Testability,
--	Deployability 
--	Configurability 
--	Workflow 
--	Security
+  - Extendibility 
+   - Agility 
+   - Testability  
+   - Deployability 
+   - Workflow, Security
 
 ### Architecture Component Diagram
 The Architecture proposal is to use Microservices Oriented style with multiple autonomous microservices each owning it’s data with in a Subdomain and implementing different patterns within each microservice with simple CRUD, CQRS patterns using HTTP as a communication protocol between the client apps and the microservices. 
@@ -56,9 +54,9 @@ Each cell will be a collection of microservices and components which are grouped
 - Synchronous: All these communication with be Restful services using an API gateway.
 ![Cell Based Asynchronous Ssynchronous](..//Images/CellAsynchronousSsynchronous.png) 
 
--	Request Response: API types provide an abstraction over everything that can be queried or activated based on the subdomain process needs.
--	Domain Events allow action in real-time based on changes that occur during the business process and allowing subdomain to react on the fact.
--	Streams capture the ongoing evolving nature of the environment, allowing pattern matching and analysis. It is primarily used in Networking HUB Core subdomain to capture the Non Profit community activities on the HUB.
+- Request Response: API types provide an abstraction over everything that can be queried or activated based on the subdomain process needs.
+- Domain Events allow action in real-time based on changes that occur during the business process and allowing subdomain to react on the fact.
+- Streams capture the ongoing evolving nature of the environment, allowing pattern matching and analysis. It is primarily used in Networking HUB Core subdomain to capture the Non Profit community activities on the HUB.
 
 Every Cell will have a document to depict all its offerings to other subdomains. All the capabilities which are expected to give value to it’s external subdomains will be exposed as network accessible endpoints. These endpoints will have APIs hosted. 
 
@@ -107,8 +105,8 @@ Primary actors involved in the Candidate Registration process are Candidate and 
 The above image depicts overall communication style used for the candidate registration. It shows all the subdomains, bounded context, microservices, events, API communication, notification services.
 - ADRs
 Key Patterns and ADRs identified for the Candidate Registration process
--	BFF
--	CQRS
+- BFF
+- CQRS
 
 
 ###  Candidate Onboarding Process
@@ -352,14 +350,18 @@ Shard Indexer: This service provides the data from the Shard Graph DB.
 
 - This process will have two different set of services
 - One pool of services which will keep helping the 
-	 NPC Match Notification Service: For provide the match notifications
- 	Match NPCs: For providing match recommendations.
+  - NPC Match Notification Service: For provide the match notifications
+  - Match NPCs: For providing match recommendations.
 - For reads, the Indexer service implements queries independently
 - For each reading activity we will have a separate instance and whereas for the transactional area we will have separate service. This implementation is primarily because the demands for the queries are drastically different. 
 This domain holds Shard DB Architecture which is very critical to handle the traffic. The proposed architecture is to divide data into horizontal partitions that are organized into various servers. Primary reasons to shard
 - Data will be siloed into separate instances based on different NPC activities
-	 By Region, 	By Action.  	By Service Offerings,	By Likes, Events
-- To minimize the latency
+  - By Region
+  - Action  	
+  - By Service Offerings
+  - By Likes
+  -  Events
+  -  To minimize the latency
 Neo4J Fabric is the solution for graph sharding which allows the NPCs to break the graphs based on the relationships. It allows to store smaller graphs and store them in separate databases. 
 
 ### Fabric Causal Cluster and No single point of failure
