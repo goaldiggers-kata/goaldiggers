@@ -109,12 +109,263 @@ Key Patterns and ADRs identified for the Candidate Registration process
 -	CQRS
 
 
-####  Candidate Onboarding Process 
-####  Candidate Roadmap Tracker 
-####  Non Profit Community Registration 
-#### - Non Profit Community Networking HUB 
-####  NPC Activity Tracker on NPC Network HUB
-####  NPC Recommendation Engine
-####  Fabric Causal Cluster and No single point of failure
+####  Candidate Onboarding Process
+Candidate and Mentor both are primary actors for the candidate onboarding process. 
+Candidate has an intake and waiting for the Mentor to onboarding onto the platform. As part of the registration the candidate has just raised the request for Non Profit Community offerings and got the Intake ID assigned. Once the candidate gets onboarded completely, mentor will assign him the NPC based on the assessment results.
+The below representation shows the high level steps which both the candidate and mentor have to do in order to complete the onboarding process. 
+Every milestone of the Candidate Onboarding process has been captured in the Status Management tile.
+Prerequisite: Candidate Intake ID Assigned.
+High level steps and Process discovery
+- The onboarding process gets initiated once the candidate completes the registration process.
+  ![CandidateOnboardingProcess](..//Images/CandidateOnboardingProcess.png) 
+Output
+-	Mentor Assigned.
+-	Candidate and Mentor Meeting complete
+-	Roadmap Created
+-	Non Profit Community Assigned and Program assigned.
 
+Subdomain and Bounded Context 
+Below are the Core, Generic and Supporting Subdomains which get involved for the candidate onboarding process.
+-	Core Subdomain: Candidate NPC Matching
+-	Supporting Subdomain: Candidate Roadmap Tracker
+-	Generic Subdomains: Platform Services, Status Manager, Notification Services
+
+- Candidate Registration Context view and bounded context 
+![Candidate Registration Context view and bounded context](..//Images/CandidateRegistrationContextviewandboundedcontext.png) 
+- Candidate Registration Sequence Diagram
+![Candidate Registration Sequence Diagram](..//Images/CandidateRegistrationSequenceDiagram.png) 
+ 
+Key Patterns and ADRs identified for the Candidate Registration process
+-	BFF
+-	CQRS
+
+####  Candidate Roadmap Tracker
+This is a critical process in the platform. The primary actor for this process will be Candidate and the Mentor. All the critical milestones of the candidate which were aligned during the initial meetings will be updated by the mentor based on the regular assessments. 
+Below is the high level process discovery.
+![Candidate Roadmap Tracker](..//Images/CandidateRoadmapTrackerProcess.png) 
+
+-	Candidate Roadmap Tracker helps the mentor to capture the program assessment results
+-	Candidate Roadmap Tracker capture all the regular meeting and provides all the data to the metrics management
+-	Based on the progress made by the candidate the next available NPC services should get assigned. 
+-	Candidate Metrics Management capture all the results and give the rating based on the benchmark defined by the Platform Management. Marks will be defined.
+
+Prerequisites/Inputs
+-	Candidate and NPC should have been onboarded
+-	Candidate Mentor Assigned
+-	Program Offering Assigned to the Candidate
+
+Candidate Roadmap Tracking process
+![Candidate Roadmap Tracking process](..//Images/CandidateRoadmapTrackingprocess.png) 
+
+Subdomain and Bounded Context 
+Below are the Core, Generic and Supporting Subdomains which get involved for the candidate onboarding process.
+-	Core Subdomain: NA
+-	Supporting Subdomain: Candidate Metrics Management, Candidate Roadmap Tracker
+-	Generic Subdomains: Platform Services, Status Manager, Notification Services
+Key Patterns and ADRs identified for the Candidate Registration process
+-	Graph DB
+-	BFF
+-	CQRS
+
+
+####  Non Profit Community Registration 
+Non Profit Community is the primary actor for the Spotlight Platform. They register for program offerings or services which they can provide to the onboarded candidates. As part of the process discovery we have derived the below flow.
+The below representation shows the high levels steps which the NPC has to undergo during the registration process. 
+Every milestone of the NPC Registration process has been captured in the Status Management tile.
+-	The registration process is initiated by the NPC logging into the Spotlight platform, he can do that using the web or a mobile platform.
+-	This is the initial step for the NPC, it starts with registration and ends with NPC assignment request.
+-	Based on the NPC’s Program offering preferences on the user interface gets changed. This is a dynamic user interface.
+-	NPC gets notified with email to complete the profile after the mail id/mobile gets validated.
+-	Once the profile is created, administrator will approve and the Intake ID is assigned.
+Prerequisites/Input: NA
+
+![HighlevelstepsandProcessdiscovery](..//Images/HighlevelstepsandProcessdiscovery.png) 
+
+Output
+-	Assessment Complete and Intake Assigned.
+Subdomain and Bounded Context 
+Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
+-	Core Subdomain: NPC Onboarding Community
+-	Supporting Subdomain: NPC Assessment Engine
+-	Generic Subdomains: Platform Services, Status Manager, Notification Services
+![Non-Profit Community Registration Process](..//Images/Non-ProfitCommunityRegistrationProcess.png) 
+
+Key Patterns and ADRs identified for the Candidate Registration process
+-	Micro Frontend
+-	BFF
+-	CQRS
+
+####  Non Profit Community Networking HUB 
+NPC, Community Leader and Administrator are the primary actors for onboarding the NPC onto the Spotlight Process.
+NPC has an intake and waiting for the Community Leader to onboard the NPC onto the platform. As part of the registration the NPC has just raised the request against the service offerings and got the Intake ID assigned. Once the NPC gets onboarded completely, Community Leader will assign him the candidates based on the NPC Capacity, Bandwidth and roadmap which the NPC gets aligned during the initial meeting.
+The below representation shows the high level steps which both the NPC and Community have undergo to complete the onboarding process. 
+
+Every milestone of the NPC Onboarding process has been captured in the Status Management tile.
+Prerequisites/Input
+•	NPC Intake ID Assigned.
+
+![High level Steps and Process Discovery](..//Images/HighlevelstepsandProcessdiscovery.png) 
+
+Output:
+-	NPC gets onboarded onto the Spotlight Platform
+-	Training will get assigned to the NPC and it is mandate for him to complete. 
+Subdomain and Bounded Context 
+Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
+-	Core Subdomain: Candidate and NPC Matching
+-	Supporting Subdomain: NPC Roadmap Tracker
+-	Generic Subdomains: Platform Services, Status Manager, Notification Services
+
+![Non-Profit Community Onboarding Sequence Flow](..//Images/Non-ProfitCommunityOnboardingSequenceFlow.png) 
+
+Key Patterns and ADRs identified for the Candidate Registration process
+•	Micro Frontend
+•	BFF
+•	CQRS
+
+####  NPC Roadmap Tracker
+This is a critical process in the platform. The primary actor for this process will be Community Leader, NPC and Administrator. All the critical milestones of the NPC which were aligned during the initial meetings will be updated by the NPC based on the regular assessments. 
+NPC Roadmap Tracker Process discovery
+![](..//Images/.png) 
+
+-	NPC Roadmap Tracker captures all the regular meeting and provides all the data to the NPC Metrics management
+-	NPC Metrics Management plays a critical and it has Decision Engine will validates assigns the NPC Stack ranking.
+-	Based on the progress made by the NPC the next available NPC services should get assigned. 
+
+Output
+-	Completion of Program Offering services per candidate
+-	Helps in NPC Capacity Planning 
+-	Administrator will be able to assess the bandwidth of the NPC
+Subdomain and Bounded Context 
+Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
+-	Core Subdomain: NA
+-	Supporting Subdomain: NPC Roadmap Tracker, NPC Metrics Management
+-	Generic Subdomains: Platform Services, Status Manager, Notification Services
+Non-Profit Community Roadmap Tracker Sequence Flow
+![Non-Profit Community Roadmap Tracker Sequence Flow](..//Images/Non-ProfitCommunityRoadmapTrackerSequenceFlow.png) 
+
+Key Patterns and ADRs identified for the Candidate Registration process
+-	Graph DB
+-	BFF
+-	CQRS
+
+
+
+
+####  Non Profit Community Networking HUB
+
+The section covers all the functionalities and system architecture for the Network HUB. From the strategy perspective as Networking HUB is a core subdomain our approach towards architecture is different.
+Below is the process discovery which was done as part of the event storming sessions.
+
+Non Profit Community Networking HUB Process Discovery
+![](..//Images/.png) 
+
+High Level In Scope
+-	NPC Profile will be created in the Network HUB once the NPC Roadmap Tracker sub domain posts an Event for Create Profile
+-	NPC user will be allowed to add additional data and upload photos.
+-	NPC should be able to like and should be able to tag to other NPCs
+-	NPC should get notifications when matched with other NPC
+-	NPC should be able to view recommendations of other NPC in geographically nearby regions.
+-	NPC can move to different location and still the NPC Networking HUB should still be able to get recommendations of nearby NPCs
+-	All the onboarded NPCs of the Spotlight platform will be the users of the Networking HUB. 
+-	Networking HUB will feed stream data which will help the Candidate NPC allocation
+-	Post Non Profit Services, Events, Create Channels etc.,
+-	Push Notifications to NPCs based on Matching, Likes, Interest, Post etc.,
+Next Phase Scope
+-	Chatting Service on the HUB.
+-	Onboarded Candidate can have just the Read only View to gain knowledge of the NP Community activities happening based on the Geo-Location.
+-	Candidate can show up interest to participate and contribute in NP Community services but this needs Mentor approval.
+-	Support for multiple languages if the Spotlight platform expands the services globally.
+
+### Non Profit Community Networking HUB Context view and Bounded Context
+
+![Non Profit Community Networking HUB Context view and Bounded Context](..//Images/Non-ProfitCommunityNetworkingHUBContextviewandBoundedContext.png) 
+
+There will be a stack of microservices behind the API gateway, which serve the Non Profit Community user requests. 
+As soon the NPC user logins to the Network site for the first time, the Invoke NPC Profile API hosted by the “Non Profit Community Core subdomain” will be invoked to add to the corresponding sharded index so that the NPC shows up in recommendations of the nearby NPC members of the Spotlight platform. NPC user requests “Recommendations” to the HUB Recommendation Engine, and the index gets queried to generate recommendations for the users. 
+Once the NPC user starts Liking through those recommendations, the HUB Like Service receives those Likes and places them in a data-streams. This service should be elastic enough to handle the inflow and it pushes the data into Kafka Streams. There will be a pool of activity based HUB Worker services which read data from these streams for generating NPC matches. The HUB Worker queries on the Likes data and sends the match notification to both the NPC users using Web Sockets.
+Note: We have just given “Like”one such activity which a NPC does on the HUB.
+ 
+Subdomain and Bounded Context 
+Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
+-	Core Subdomain: Networking HUB
+-	Supporting Subdomain: Profile Creation, NPC Activity Tracker, Recommendation Engine, NPC Match Notification, NPC Shard Indexer, Match NPCs, NPC Activity Streams
+-	Generic Subdomains: Platform Services, Status Manager, Notification Services
+NPC Profile Creation
+-	For the first time user. 
+-	NPC doesn’t need to register in the Network HUB
+-	NPC User login to the HUB it checks the profile, if it doesn’t exist the NPC Profile Creation service invokes the API, Get NPC Profile hosted by Non Profit Community Core Subdomain.
+-	Once the data is retrieved and the same gets persisted to the corresponding Sharded Index 
+Login:
+-	OAuth or Single sign on will be used to validate the NPC profile. The profile service will be hosted by the Non Profit Community domain.
+-	Once the validation is complete NPC will be able to see other NPC profiles based on the NPC Network Recommendation Engine. This engine is part of NPC HUB Core domain. 
+-	NPC Activity Tracker: NPC Network HUB will act as matching engine so that the most NPCs meet. This is to establish meaningful relationships to provide service offerings to the candidates. The core objective is to track the activity of the NPC on the HUB.
+-	Pull Data: When a NPC does oAuth using FB, LinkedIn etc., it collects lots of meaningful information like location, distance, likes, dislikes. It also extracts lots of information from pictures from the Post to understand community activities, events, CSR etc., and these get appended to the NPC profile.
+-	NPC Ranker: It is a critical background component which assigns a random scores and based on these NPC will be grouped. It is achieved using shard/distribute, as we can’t keep all the data in one Graph DB. 
+-	NPC Service Offering Levelling technique: If one NPC is getting too much of matches/attention, to make it fair for NPCs, Networking normalizes this by not showing to other NPC but at the same time if any NPC is not showing attention the Recommendation Engine will start showing up to other NPC about it’s services.
+-	Reply/Tagging: How willingly the NPC is replying and getting tagged to other NPCs
+-	User can upload photos. There is a limit, it’s governed by the Spotlight platform Administrator. All the photos/videos are persisted in a Blob store and the path in the Graph DB.
+-	Neo4J is used as Graph DB.
+-	Service makes a request to fetch the recommendations from the HUB Recommendation Engine. This is a preliminary set and cached index.
+-	At the same time a domain event “Recommendations” is fired asynchronously to the engine for a refined recommendation.
+
+### NPC Profile Creation on the NPC Network HUB
+
+![NPC Profile Creation on the NPC Network HUB](..//Images/NPCProfileCreationontheNPCNetworkHUB.png) 
+
+NPC Activity Tracker:
+-	This service captures all the sequence of operations that gets executed by a user 
+	Post like, 	Tag, 	Posts, 	Accepts Notifications, 	Creating Channels, 	Voting Request for Community Service 
+-	Each activity mentioned above will have Unique Microservices per Activity. Examples below
+-	TAG: NPC Tag Activity Service
+-	Posts: NPC POST Activity Service
+-Each activity above has separate stream. As the new feature gets added to the activities section, we will have to introduce new streams.
+-	Each activity can be used for data analysis for different use cases.
+-	All these streams are ultimately read by the Unique Activity Tracker Service. For every Activity we will have separate microservices. This gives flexibility to plan, scale, analyze, cache the data based on the user activity on the network hub.
+-	For Instance NPC A, does only Likes the Posts. For this user more Posts and NPC offerings will be recommended.
+-	Another NPC B, does lot of Posts about their service offerings. For this user more Notifications and Tag requests are sent.
+-	All these activities are posted to the Sharded Graph DB.
+
+
+### NPC Activity Tracker on NPC Network HUB
+![NPC Activity Tracker on NPC Network HUB](..//Images/NPCActivityTrackeronNPCNetworkHUB.png) 
+
+NPC Collaboration Request: This is a unique activity which helps the NPCs to collaborate.
+-	NPC A sends collaboration Request to NPC B.
+-	Collaboration request is posted into the unique collaboration stream and same gets notified to NPC B
+-	If NPC B accepts the collaboration request both get tagged.
+
+HUB Recommendation Engine: It is core service which sends notifications, recommendations, matching requests and customizes the user content on the page. It’s a background thread gets domain events all the services.
+-	Every Activity which the user does on the Network HUB it forwards the request to the Shard Indexer service.
+-	Shard Indexer service exposes an API
+-	Once the API is invoked it determines which shard to be queried based on the activity done by the user.
+-	Indexer queries all the sharded graphs to fetch the list based on the activity search and return the list to the Recommendation Engine. 
+-	Engine applies to filter on the list bases on the NPC Preferences and returns final list.
+-	Recommendation Engine also pulls data from NPC Roadmap Tracker subdomain.
+
+
+### NPC Recommendation Engine
+![NPC Recommendation Engine](..//Images/NPCRecommendationEngine.png) 
+
+Shard Indexer: This service provides the data from the Shard Graph DB. 
+
+-	This process will have two different set of services
+-	One pool of services which will keep helping the 
+	 NPC Match Notification Service: For provide the match notifications
+ 	Match NPCs: For providing match recommendations.
+-	For reads, the Indexer service implements queries independently
+-	For each reading activity we will have a separate instance and whereas for the transactional area we will have separate service. This implementation is primarily because the demands for the queries are drastically different. 
+This domain holds Shard DB Architecture which is very critical to handle the traffic. The proposed architecture is to divide data into horizontal partitions that are organized into various servers. Primary reasons to shard
+-	Data will be siloed into separate instances based on different NPC activities
+	 By Region, 	By Action.  	By Service Offerings,	By Likes, Events
+-	To minimize the latency
+Neo4J Fabric is the solution for graph sharding which allows the NPCs to break the graphs based on the relationships. It allows to store smaller graphs and store them in separate databases. 
+
+### Fabric Causal Cluster and No single point of failure
+![Fabric Causal Cluster and No single point of failure](..//Images/FabricCausalClusterandNosinglepointoffailure.png) 
+
+Architecture proposed is separating the data stores into shards and placing them based on the activity into separate graph DBs. This gives flexibility any combination of inhouse or cloud to fit the business needs and requirements. 
+The above architecture representation has 2 coordinated shards which will give us always high availability and We have separated the fabric database to solely handle all of the load and processing of requests.
+Data Division
+- As part of the analysis the context and the data definitions will be clearly defined and how the data has to be modeled so that we can have subgraphs.
+- All the shards will be divided based on activity or on location. 
 
