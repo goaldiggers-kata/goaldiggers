@@ -348,9 +348,9 @@ The section covers all the functionalities and system architecture for the Netwo
 Below is the process discovery which was done as part of the event storming sessions.
 
 Non Profit Community Networking HUB Process Discovery
-![](..//Images/.png) 
+![NPC Networking Process HUB](..//Images/NetworkingHubProcess.PNG.png) 
 
-High Level In Scope
+#### High Level In Scope
 - NPC Profile will be created in the Network HUB once the NPC Roadmap Tracker sub domain posts an Event for Create Profile
 - NPC user will be allowed to add additional data and upload photos.
 - NPC should be able to like and should be able to tag to other NPCs
@@ -360,8 +360,9 @@ High Level In Scope
 - All the onboarded NPCs of the Spotlight platform will be the users of the Networking HUB. 
 - Networking HUB will feed stream data which will help the Candidate NPC allocation
 - Post Non Profit Services, Events, Create Channels etc.,
--Push Notifications to NPCs based on Matching, Likes, Interest, Post etc.,
-Next Phase Scope
+- Push Notifications to NPCs based on Matching, Likes, Interest, Post etc.,
+
+#### Next Phase Scope
 - Chatting Service on the HUB.
 - Onboarded Candidate can have just the Read only View to gain knowledge of the NP Community activities happening based on the Geo-Location.
 - Candidate can show up interest to participate and contribute in NP Community services but this needs Mentor approval.
@@ -371,22 +372,30 @@ Next Phase Scope
 
 ![Non Profit Community Networking HUB Context view and Bounded Context](..//Images/Non-ProfitCommunityNetworkingHUBContextviewandBoundedContext.png) 
 
-There will be a stack of microservices behind the API gateway, which serve the Non Profit Community user requests. 
-As soon the NPC user logins to the Network site for the first time, the Invoke NPC Profile API hosted by the “Non Profit Community Core subdomain” will be invoked to add to the corresponding sharded index so that the NPC shows up in recommendations of the nearby NPC members of the Spotlight platform. NPC user requests “Recommendations” to the HUB Recommendation Engine, and the index gets queried to generate recommendations for the users. 
-Once the NPC user starts Liking through those recommendations, the HUB Like Service receives those Likes and places them in a data-streams. This service should be elastic enough to handle the inflow and it pushes the data into Kafka Streams. There will be a pool of activity based HUB Worker services which read data from these streams for generating NPC matches. The HUB Worker queries on the Likes data and sends the match notification to both the NPC users using Web Sockets.
-Note: We have just given “Like”one such activity which a NPC does on the HUB.
+- There will be a stack of microservices behind the API gateway, which serve the Non Profit Community user requests. 
+- As soon the NPC user logins to the Network site for the first time, it invokes NPC Profile API hosted by the “Non Profit Community Core subdomain” will be invoked to add to the corresponding sharded index so that the NPC shows up in recommendations of the nearby NPC members of the Spotlight platform. 
+- NPC user requests “Recommendations” to the HUB Recommendation Engine, and the index gets queried to generate recommendations for the users. 
+- Once the NPC user starts Liking through those recommendations, the HUB Like Service receives those Likes and places them in a data-streams. 
+- This service should be elastic enough to handle the inflow and it pushes the data into Kafka Streams. 
+- There will be a pool of activity based HUB Worker services which read data from these streams for generating NPC matches. 
+- The HUB Worker queries on the Likes data and sends the match notification to both the NPC users using Web Sockets.
+
+**Note: We have just given “Like”one such activity which a NPC does on the HUB.**
  
-Subdomain and Bounded Context 
+#### Subdomain and Bounded Context:
+
 Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
-- Core Subdomain: Networking HUB
-- Supporting Subdomain: Profile Creation, NPC Activity Tracker, Recommendation Engine, NPC Match Notification, NPC Shard Indexer, Match NPCs, NPC Activity Streams
-- Generic Subdomains: Platform Services, Status Manager, Notification Services
-NPC Profile Creation
-- For the first time user. 
+- **Core Subdomain:** Networking HUB
+- **Supporting Subdomain:** Profile Creation, NPC Activity Tracker, Recommendation Engine, NPC Match Notification, NPC Shard Indexer, Match NPCs, NPC Activity Streams
+- **Generic Subdomains:** Platform Services, Status Manager, Notification Services
+
+#### NPC Profile Creation: For the first time user. 
+
 - NPC doesn’t need to register in the Network HUB
 - NPC User login to the HUB it checks the profile, if it doesn’t exist the NPC Profile Creation service invokes the API, Get NPC Profile hosted by Non Profit Community Core Subdomain.
 - Once the data is retrieved and the same gets persisted to the corresponding Sharded Index 
-Login:
+ 
+#### Login:
 - OAuth or Single sign on will be used to validate the NPC profile. The profile service will be hosted by the Non Profit Community domain.
 - Once the validation is complete NPC will be able to see other NPC profiles based on the NPC Network Recommendation Engine. This engine is part of NPC HUB Core domain. 
 - NPC Activity Tracker: NPC Network HUB will act as matching engine so that the most NPCs meet. This is to establish meaningful relationships to provide service offerings to the candidates. The core objective is to track the activity of the NPC on the HUB.
@@ -403,7 +412,7 @@ Login:
 
 ![NPC Profile Creation on the NPC Network HUB](..//Images/NPCProfileCreationontheNPCNetworkHUB.png) 
 
-NPC Activity Tracker:
+#### NPC Activity Tracker:
 - This service captures all the sequence of operations that gets executed by a user 
 	Post like, 	Tag, 	Posts, 	Accepts Notifications, 	Creating Channels, 	Voting Request for Community Service 
 - Each activity mentioned above will have Unique Microservices per Activity. Examples below
