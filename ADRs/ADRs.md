@@ -8,5 +8,5 @@
 * [GraphDB](ADR007_GraphDB.md)
 * [Geo Services Integration.md](ADR008_GeoServicesIntegration.md)
 * [Streams](ADR009_Streams.md)
-* [Blobstore](ADR010_Blobstore.md)
-* [OAuth](ADR011_OAuth.md)
+* [Blobstore](ADR010_Blobstore.md) (TO DO)
+* [OAuth](ADR011_OAuth.md) (TO DO)
