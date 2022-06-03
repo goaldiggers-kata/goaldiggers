@@ -15,6 +15,8 @@ On the Network HUB Core subdomain as it's all networking and build relationships
 
 ## Rationale 
 
+The Graph DB is built to handle the connected data and highly connected data. The intent is to have value objects created based on the relationships which can built during the runtime.
+
 ## Status
 Proposed. 
 
