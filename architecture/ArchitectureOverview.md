@@ -377,7 +377,7 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 
 ### Non Profit Community Networking HUB Context view and Bounded Context
 
-![Non Profit Community Networking HUB Context view and Bounded Context](..//Images/Non-ProfitCommunityNetworkingHUBContextviewandBoundedContext.png) 
+![Non Profit Community Networking HUB Context view and Bounded Context](..//Images/Non-ProfitCommunityNetworkingHUBProcessDiscovery.png.png) 
 
 - There will be a stack of microservices behind the API gateway, which serve the Non Profit Community user requests. 
 - As soon the NPC user logins to the Network site for the first time, it invokes NPC Profile API hosted by the “Non Profit Community Core subdomain” will be invoked to add to the corresponding sharded index so that the NPC shows up in recommendations of the nearby NPC members of the Spotlight platform. 
