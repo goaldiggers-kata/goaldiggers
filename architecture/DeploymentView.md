@@ -1,6 +1,6 @@
 # Deployment View
 
-We will be adopting **Scale Cube model**. This model will be adopted from the discovery phase to deployment. 
+We will be adopting **Scale Cube model**. This model will be adopted from the discovery phase to deployment. **Based on the business expansion the capacity planning of the infrastructure can be planned. It gives a very cost effective approach.**
 
 This model helps to make all the stakeholders to talk **ubiquitous language**, by having this consistentency the scale related explicit requirements can be discussed in the initial phase of the architectural discussions. 
 
