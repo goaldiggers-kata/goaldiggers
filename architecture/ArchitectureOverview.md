@@ -17,8 +17,8 @@
 ### Overview 
 To solve the primary business problem our approach was to identify a **domain model that reflects the **Spotlight platform vision**. 
 
-We have used **DDD and Bounded Context patterns. Each bounded context will have fleet of microservice and will have the flexibility of employing different patterns and they will have different responsibilities to solve the Domain problem.**
-Proposal is to use **Cell Based Architecture** which gives Spotlight platform to be build as a decentralized cloud native application. **Each Cell represents a Subdomain’s bounded context which can be independently deployable, manageable, and observable.**
+We have used **DDD and Bounded Context patterns. Each bounded context will have a fleet of microservice that will have the flexibility of employing different patterns having different responsibilities to solve the Domain problem.**
+Proposal is to use **Cell Based Architecture** which gives Spotlight platform to be built as a decentralized cloud native application. **Each Cell represents a Subdomain’s bounded context which can be independently developed, deployed, managed, and will be observable.**
 
 It implies that the Core Subdomains below can have their independent journey. 
 
@@ -54,11 +54,11 @@ The Architecture proposal is to use **Microservices Oriented style** with multip
 
 **Cell is a representation of a Subdomain and divides the area of the business between the Candidate and Non-Profit Community**. 
 
-Each cell has a bounded context and solves the problem statement with the help of it’s coarse grained microservices which are of the cell. Each cell is expected to solve a specific **subdomain problem. **
+Each cell has a bounded context and solves the problem statement with the help of it’s coarse grained microservices which are part of the cell. Each cell is expected to solve a specific **subdomain problem. **
 
 - Each cell will be a collection of microservices and components which are grouped and identified as part of the process discovery and later designed, implemented and deployed. 
-- Cell is an independently managed entity which can have its own observability, deployment, pipeline and version. This encapsulation ensures each subdomain to migrate, deploy without impacting users and subdomains. 
-- The components, microservices with in the cell can communicate with each other using REST APIs. All the intra cell communication will be either synchronous or asynchronous.
+- Cell is an independently managed entity which can have its own observability, deployment, pipeline and version. This encapsulation ensures each subdomain to migrate, deploy without impacting users and other subdomains. 
+- The components, microservices within the cell can communicate with each other using REST APIs. All the intra cell communication will be either synchronous or asynchronous.
 
   - **Asynchronous:** All these communication for data update propagation across the cell is based on Domain Events and proposal is to use Streaming platform Kafka.
   - **Synchronous:** All these communication with be Restful services using an API gateway.
@@ -71,7 +71,6 @@ Each cell has a bounded context and solves the problem statement with the help o
 
 - Every Cell will have a document to depict all its offerings to other subdomains.
 - All the capabilities which are expected to give value to it’s **external subdomains** will be exposed as network accessible endpoints. These endpoints will have APIs hosted. 
-- The capabilities of a cell must be network accessible endpoints. 
 - In addition, if the cell needs access to external dependencies, then these must also be exposed as network endpoints through a cell-gateway. These endpoints can expose APIs, events, or streams. Any interfaces that the microservices or serverless components offer that are not made available by the control point should be inaccessible from outside of the cell. 
 
 - **Security is Implicit Architectural Characteristic**. 
@@ -82,7 +81,7 @@ Each cell has a bounded context and solves the problem statement with the help o
 - For all the microservices and components we will be adopting **container model.** 
 - Each container image instance represents a single process. 
 - Each container image works as a boundary for a process, it will have primitives that can be used to scale or batch the process. **When the process completes, the container lifecycle ends.** 
-- Containers will also represent long-running processes like web servers and also be short-lived processes like batch jobs, implemented using Kubernetes Corn jobs. 
+- Containers will also represent long-running processes like web servers and also be short-lived processes like batch jobs, implemented using Kubernetes Cron jobs. 
 - If the process fails, the container ends, and the orchestrator takes over. The orchestrator will have how many instances should be running and if one fails, the orchestrator will create another container instance to replace the failed process.
 
 ###  Domain Context Map to Microservices Mapping
@@ -103,7 +102,7 @@ This section gives the **mapping for the Subdomains, Process specific component 
 The below representation shows the high levels steps which the candidate has to undergo using the registration process. 
 
 - **Every milestone of the Candidate Registration process has been captured in the Status Management tile provided by the Status Managment Subdomain.**
-- The registration process is initiated by the candidate logging into the Spotlight platform, he can do that using the web or a mobile platform.
+- The registration process is initiated by the candidate logging into the Spotlight platform (Mobile/Web).
 - This is the initial step for the candidate, it starts with registration and ends with NPC assignment request.
 - **Based on the Candidate’s Program offering preferences the user interface gets changed dynamically**
 - Candidate get notified with email to complete the profile after the mail id/mobile gets validated.
@@ -131,10 +130,10 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 
 ![Candidate Registration Sequence Diagram](..//Images/CandidateRegistrationSequenceDiagram.png)
   
-Primary actors involved in the **Candidate Registration process are Candidate and Administration.** 
+Primary actors involved in the **Candidate Registration process are Candidate and Administrator.** 
 
-- It is a Single Page Application for Web Application and can be extended to the mobile platform also. 
-- It can be developed using React or Angular.
+- It is a Single Page Application and can be extended to the mobile platform also. 
+- React/Angular can be used to develop this.
 - The above image depicts overall communication style used for the candidate registration. It shows all the subdomains, bounded context, microservices, events, API communication, notification services.
 
 #### ADRs:
@@ -161,9 +160,9 @@ Key Patterns and ADRs identified for the Candidate Registration process
 
 #### Output:
 - Mentor Assigned.
-- Candidate and Mentor Meeting complete
-- Roadmap Created
 - Non Profit Community Assigned and Program assigned.
+- Candidate and Mentor initial Meeting is complete
+- Roadmap Created
 
 #### Subdomain and Bounded Context:
 
@@ -187,23 +186,23 @@ Below are the **Core, Generic and Supporting Subdomains*** which get involved fo
 - CQRS
 
 ###  Candidate Roadmap Tracker
-This is a critical process in the platform. 
-**The primary actor for this process will be Candidate and the Mentor.** All the critical milestones of the candidate which were aligned during the initial meetings will be updated by the mentor based on the regular assessments.
+This is a critical component of the platform. 
+**The primary actor for this process will be Candidate and the Mentor.** All the critical milestones of the candidate which were aligned during the initial meetings will be updated by the mentor based on the regular assessments/meetings.
 
 #### Below is the high level process discovery.
 
 ![Candidate Roadmap Tracker](..//Images/CandidateRoadmapTrackerProcess.png) 
 
-- **Candidate Roadmap Tracker** helps the mentor to capture the program assessment results
-- Candidate Roadmap Tracker capture all the regular meeting and provides all the data to the metrics management
-- Based on the progress made by the candidate the next available **NPC services should get assigned.**
-- **Candidate Metrics Management** capture all the results and give the rating based on the benchmark defined by the Platform Management. Marks will be defined.
+- **Candidate Roadmap Tracker** helps the mentor to capture the program assessment results.
+- Candidate Roadmap Tracker capture all the regular meeting and provides all the data to the metrics management module.
+- Based on the progress made by the candidate the next available **NPC services should get assigned.** if the candidate agrees.
+- **Candidate Metrics Management** capture all the results and give the rating based on the benchmark defined by the Platform Management. Grading will be done based on the work submitted/assessed.
 
 #### Prerequisites/Inputs:
 
-- Candidate and NPC should have been onboarded
-- Candidate Mentor Assigned
-- Program Offering Assigned to the Candidate
+- Candidate and NPC should have been onboarded.
+- Candidate Mentor Assigned.
+- Program Offering Assigned to the Candidate.
 
 #### Candidate Roadmap Tracking process:
 
@@ -227,11 +226,11 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 
 **Non Profit Community is the primary actor for the Spotlight Platform.** 
 
-- They register for program offerings or services which they can provide to the onboarded candidates.
+- NPC will register for program offerings or services which can be utilized by the onboarded candidates.
 - As part of the process discovery we have derived the below flow.
 - The below representation shows the high levels steps which the NPC has to undergo during the registration process. 
-- Every milestone of the NPC Registration process has been captured in the Status Management tile.
-- The registration process is initiated by the NPC logging into the Spotlight platform, he can do that using the web or a mobile platform.
+- Every milestone of the NPC Registration process has been captured in the Status Management.
+- The registration process is initiated by the NPC logging into the Spotlight platform (Web/Mobile).
 - This is the initial step for the NPC, it starts with registration and ends with NPC assignment request.
 - Based on the NPC’s Program offering preferences on the user interface gets changed. This is a dynamic user interface.
 - NPC gets notified with email to complete the profile after the mail id/mobile gets validated.
@@ -270,7 +269,7 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 
 - NPC has an intake and waiting for the Community Leader to onboard the NPC onto the platform.
 - As part of the registration the NPC has just raised the request against the service offerings and got the Intake ID assigned. 
-- Once the NPC gets onboarded completely, Community Leader will assign him the candidates based on the NPC Capacity, Bandwidth and roadmap which the NPC gets aligned during the initial meeting.
+- Once the NPC gets onboarded, Decision Engine will evaluate and assign the list of candidates meeting the criteria along with the NPC Capacity, Bandwidth and roadmap which the NPC gets aligned during the initial meeting.
 - The below representation shows the high level steps which both the NPC and Community have undergo to complete the onboarding process. 
 - Every milestone of the NPC Onboarding process has been captured in the Status Management tile.
 
@@ -294,7 +293,7 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
 
 - **Core Subdomain:** Candidate and NPC Matching
-- **Supporting Subdomain:** NPC Roadmap Tracker
+- **Supporting Subdomain:** NPC Roadmap Tracker, Decision Engine
 - **Generic Subdomains:** Platform Services, Status Manager, Notification Services
 
 #### Non Profit Community Onboarding Sequence Diagram
@@ -311,23 +310,22 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 This is a critical process in the platform. 
 
 - **The primary actor for this process will be Community Leader, NPC and Administrator.** 
-- All the critical milestones of the NPC which were aligned during the initial meetings will be updated by the NPC based on the regular assessments. 
-- NPC Roadmap Tracker captures all the regular meeting and provides all the data to the NPC Metrics management
-- NPC Metrics Management plays a critical and it has Decision Engine will validates assigns the NPC Stack ranking.
-- Based on the progress made by the NPC the next available NPC services should get assigned. 
+- All the critical milestones of the NPC which were aligned during the initial meetings with Community Leader will be updated by the NPC based on the regular assessments done. 
+- NPC Roadmap Tracker captures all the regular meeting and provides all the data to the NPC Metrics management.
+- NPC Metrics Management plays a critical role and the Decision Engine will validates and assigns the NPC Stack ranking.
 
 #### Output:
 
-- Completion of Program Offering services per candidate
+- Completion of Program Offering services per candidate.
 - Helps in NPC Capacity Planning 
-- Administrator will be able to assess the bandwidth of the NPC
+- Administrator will be able to assess the bandwidth of the NPC.
 
 #### Subdomain and Bounded Context:
 
 Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
 
 - **Core Subdomain:** NA
-- **Supporting Subdomain:** NPC Roadmap Tracker, NPC Metrics Management
+- **Supporting Subdomain:** NPC Roadmap Tracker, NPC Metrics Management, Decision Engine
 - **Generic Subdomains:** Platform Services, Status Manager, Notification Services
 
 #### Non-Profit Community Roadmap Tracker Sequence Flow:
