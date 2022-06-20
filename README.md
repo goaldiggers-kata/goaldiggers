@@ -2,13 +2,12 @@
 
 This is the GitHub repo for the solution created by the GoalDiggers team for the 2022 O'Reilly Architectural Kata. It contains the complete proposal for the Spotlight Platform.
 
-Below is the introduction of the Team Members
-
+Below is the introduction of the Team Members of Goal Diggers
 
 * [MVS Rama Krishna](https://www.linkedin.com/in/mvs-ramakrishna-a3a57225/)
-* [B Suman]
+* [Suman Banerjee](https://www.linkedin.com/in/suman-banerjee-532a304/)
 * [Rama Surendra Babu G](https://www.linkedin.com/in/rama-surendra-babu-g-985a1913/)
-by [Goal Diggers]
+
 
 ![Goal Diggers Architecture Kata](/Images/logo.png)
 
@@ -27,18 +26,12 @@ The Spotlight platform requiremement can be found in the below link
 
 * [Program Requirements](https://docs.google.com/document/d/1XjEpcGJ87xYg1eWN9eE0_tH7te5HcVAgPvoONLHY4qQ/edit?usp=sharing)
 
-### Assumptions:
-
-* Community Leader will help and give all the support to the Non Profit Community after Intake gets created. 
-* Mentor should be aware and have complete knowledge of the Non Profit Community Service Offerings. This will help is assigning or map the services provided by the Non Profit Community to the candidates.
-* Community Leaders will work with Non Profit Community and get aligned on the programs
-* Administrator is the final authority and he can also play the role of the community leader. Where as the community leaders cannot be an Administrator.
-* Assessment which the candidate undergoes is either a test or a questionaire to assess the support needed by the candidate
-
 ### Backlog and Recommendation for Future Phase:
 
 * Methodology for Architectural documentation
-* BOT Integration: It helps in unregistered Candidates and Non Profit community to chat and under the process
+* BOT Integration: Useful for both Candidate and NPC
+   -  Candidate – Allows the candidate to get the overview of the platform.
+   -  NPC – Allows the NPC to understand the platform and various offerings of the platform.
 * ADR for Geo Location
 * ADR for Blob storage which will be used in the Networking HUB domain.
 
