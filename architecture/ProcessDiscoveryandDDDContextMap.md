@@ -12,7 +12,7 @@ As part of the Domain discovery sessions, we have analyzed Spotlight Platform bu
 Each **subdomain** resembles a set of interrelated, coherent use cases. These are defined based on the business domain and their functional requirements. In the discovery session the team has analyzed all the functional requirements to identify these subdomains.
 
 ## Actors and Definitions
-![Actors and Definitions](..//Images/ActorsandDefinitions.png)
+![Actors and Definitions](..//Images/ActorsandDefinitions.jpg)
 
 ## Core Domains 
 The main asset of the Spotlight Platform is **onboarding the Candidate and Non Profit Community**. Once they both get onboarded the Non-Profit community has to be tagged to the Candidate to avail the Service offerings to achieve the career goal. <br />
