@@ -15,7 +15,7 @@ Each **subdomain** resembles a set of interrelated, coherent use cases. These ar
 ![Actors and Definitions](..//Images/ActorsandDefinitions.jpg)
 
 ## Core Domains 
-The main asset of the Spotlight Platform is **onboarding the Candidate and Non Profit Community**. Once they both get onboarded the Non-Profit community has to be tagged to the Candidate to avail the Service offerings to achieve the career goal. <br />
+The main offering of the Spotlight Platform is **onboarding the Non Profit Community and Candidates**. Once the onboarding activity is completed, the Non-Profit community will be tagged to the Candidate to avail the Service offerings to achieve the career aspirations. <br />
 ![Core Domains](..//Images/CoreDomains.png)
 
 - **Domain: Spotlight Platform** <br />
@@ -43,7 +43,7 @@ So below are the Core Subdomains identified
       - For now primarily it is focused on United States but later based on the expansion plans of the Spotlight platform the capacity planning will have to change. 
 
 ## Supporting Domains
-The core crux of the Supporting Domain is to support the need of the Core Domains. It might also be coupled with Generic Domain. 
+The core intent of the Supporting Domain is to cater the needs of the Core Domains by leveraging the components identified in the Generic domain. 
 
 ![Supporting Domains](..//Images/Supporting%20Domains.png)
 
@@ -51,26 +51,28 @@ Below are the **Supporting Domains** identified.
 
 **Platform Management**
 - **Administrator** of the Spotlight platform manages the **primary data management**
-- Has the complete Administrative control over the platform
+- Has the complete Administrative control over the platform.
 - Provides the primary data needed to the **Status Management Domain.**
-- Uploads all the Primary data needed for the Candidate and NPC assessment
+- Uploads all the Primary data needed for the Candidate and NPC assessment.
 - It has an interface to approve the Candidate Assessments and NPC Assessments posted by the NPC/Candidate Assessment Supporting Domains. 
-- **Mentors** add the Program Offerings, and it gets into the approval process. This is primary data.
-- **Community Leaders** add the Service Offerings, and it gets into the approval process. This is primary data.
-- The other flow is once the NPC get’s approved those Program/Service Offerings get auto populated. Platform Management pushs the data.
+- **Community Leaders** add the Service Offerings, and it gets into the approval process. Part of the primary data.
+- **Mentors** add the Program Offerings, and it gets into the approval process. Part of the primary data.
+- Once the NPC get’s approved the Program/Service Offerings get auto populated. Platform Management pre-populates this data to be selected based on the service offerings.
 - Primary data to track the Milestones for both Candidate and NPC are managed.
 
 **Note: As the parameters used to assess the Candidate and Non Profit community are different so we have two different subdomains to avoid the dependencies.**
 
-**NPC Assessment Engine**
-- It creates an assessments needed for the Non-Profit Community
+**NPC Assessment Module**
+- It creates/evaluates the assessments needed for the Non-Profit Community.
 - Assessment has set of questions based on the service capabilities which the NPC is going to offer to the candidates.
 - Administrator or the Community Leader can create these assessments, based on the role who has created the assessment undergoes the approval process.
+- Integrated with Platform module to get the necessary primary data.
 
-**Candidate Assessment Engine**
-- It creates an assessments needed for the Candidate
-- Assessment has set of questions based on the program offerings.
+**Candidate Assessment Module**
+- It creates/evaluates the assessments needed for a Candidate.
+- Assessment has set of questions based on the candidate capabilities/Career aspirations.
 - Administrator or the Mentor can create these assessments, based on the role who has created the assessment undergoes the approval process.
+- Integrated with Platform module to get the necessary primary data.
 
 **Note: As the parameters used to track the roadmap of the Candidate and Non Profit community are different so we have two different subdomains to avoid the dependencies.**
 
@@ -83,7 +85,7 @@ Below are the **Supporting Domains** identified.
 
 **Candidate Roadmap Tracker**
 - It is the primary tracker for the **candidate**, which is maintained by the Mentor.
-- All the milestones are captured, and each milestone will undergo status management. This domain uses the capabilities of the Status Management Subdomain. 
+- All the milestones are captured, and each milestone will undergo status management. This domain uses the capabilities of the **Status Management Subdomain. ** 
 - **Performance Measurement**
 - Data is provided to **Candidate Metrics Management subdomain to measure the Candidate performance.**
 
