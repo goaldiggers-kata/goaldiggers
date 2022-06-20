@@ -349,12 +349,12 @@ Non Profit Community Networking HUB Process Discovery
 ![NPC Networking Process HUB](..//Images/NetworkingHubProcess.PNG) 
 
 #### High Level In Scope
-- NPC Profile will be created in the Network HUB once the NPC Roadmap Tracker sub domain posts an Event for Create Profile
+- The process gets kicked off once the NPC Roadmap tracker sub domain sends an event to initiate the Profile creation.
 - NPC user will be allowed to add additional data and upload photos.
-- NPC should be able to like and should be able to tag to other NPCs
+- NPC should be able to perform different activities like posting, tagging etc., 
 - NPC should get notifications when matched with other NPC
 - NPC should be able to view recommendations of other NPC in geographically nearby regions.
-- NPC can move to different location and still the NPC Networking HUB should still be able to get recommendations of nearby NPCs
+- NPC can move to different location and still the NPC Networking HUB should be able to get the recommendations of nearby NPCs
 - All the onboarded NPCs of the Spotlight platform will be the users of the Networking HUB. 
 - Networking HUB will feed stream data which will help the Candidate NPC allocation
 - Post Non Profit Services, Events, Create Channels etc.,
@@ -362,7 +362,7 @@ Non Profit Community Networking HUB Process Discovery
 
 #### Next Phase Scope
 - Chatting Service on the HUB.
-- Onboarded Candidate can have just the Read only View to gain knowledge of the NP Community activities happening based on the Geo-Location.
+- Onboarded Candidate will have a Read only View to gain knowledge of the NP Community activities happening based on the Geo-Location.
 - Candidate can show up interest to participate and contribute in NP Community services but this needs Mentor approval.
 - Support for multiple languages if the Spotlight platform expands the services globally.
 
@@ -378,19 +378,19 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 ![Non Profit Community Networking HUB Context view and Bounded Context](..//Images/HUBContext.PNG) 
 
 - There will be a stack of microservices behind the API gateway, which serve the Non Profit Community user requests. 
-- As soon the NPC user logins to the Network site for the first time, it invokes NPC Profile API hosted by the “Non Profit Community Core subdomain” will be invoked to add to the corresponding sharded index so that the NPC shows up in recommendations of the nearby NPC members of the Spotlight platform. 
-- NPC user requests “Recommendations” to the HUB Recommendation Engine, and the index gets queried to generate recommendations for the users. 
+- As soon the NPC user logins to the Network site for the first time, it invokes NPC Profile API hosted by the “Non Profit Community Core subdomain” will be invoked to add to the corresponding sharded index so that the NPC shows up the recommendations of the nearby NPC members of the Spotlight platform. 
+- Based on the NPC User profile, Hub Recommendation engine will pull out the matching NPC information and displays to the user. The HUB Recommendation Engine liverages the indexes created to come up with the list of matching recommendations to the NPC. 
 - Once the NPC user starts Liking through those recommendations, the HUB Like Service receives those Likes and places them in a data-streams. 
 - This service should be elastic enough to handle the inflow and it pushes the data into Kafka Streams. 
-- There will be a pool of activity based HUB Worker services which read data from these streams for generating NPC matches. 
+- There will be a pool of activity based on HUB Worker services which read data from these streams for generating NPC matches. 
 - The HUB Worker queries on the Likes data and sends the match notification to both the NPC users using Web Sockets.
 
-**Note: We have just given “Like”one such activity which a NPC does on the HUB.**
+**Note: For depiction we have considered “Like” as one such activity which a NPC perform on the HUB.**
 
 #### NPC Profile Creation: For the first time user. 
 
 - NPC doesn’t need to register in the Network HUB
-- NPC User login to the HUB it checks the profile, if it doesn’t exist the NPC Profile Creation service invokes the API, Get NPC Profile hosted by Non Profit Community Core Subdomain.
+- When the NPC logs into the Hub for the first time the NPC Profile creation service checks for the existence of the profile. If the profile doesn't exist it will invoke the API to pull the information available in the NPC Core domain
 - Once the data is retrieved and the same gets persisted to the corresponding Sharded Index 
  
 #### Login:
