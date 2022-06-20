@@ -16,7 +16,7 @@ Each **subdomain** resembles a set of interrelated, coherent use cases. These ar
 
 ## Core Domains 
 The main offering of the Spotlight Platform is **onboarding the Non Profit Community and Candidates**. Once the onboarding activity is completed, the Non-Profit community will be tagged to the Candidate to avail the Service offerings to achieve the career aspirations. <br />
-![Core Domains](..//Images/CoreDomains.png)
+![Core Domains](..//Images/CoreDomains.jpg)
 
 - **Domain: Spotlight Platform** <br />
 The Spotlight Platform is a sustained effort to amass a coalition of nonprofits in order to address specific needs within the communities we serve by leveraging a centralized platform as the base of operations to collaborate and make a collective impact.
@@ -45,7 +45,7 @@ So below are the Core Subdomains identified
 ## Supporting Domains
 The core intent of the Supporting Domain is to cater the needs of the Core Domains by leveraging the components identified in the Generic domain. 
 
-![Supporting Domains](..//Images/Supporting%20Domains.png)
+![Supporting Domains](..//Images/SupportingDomains.jpg)
 
 Below are the **Supporting Domains** identified.
 
@@ -116,5 +116,5 @@ Below are the **Supporting Domains** identified.
 The core crux of the Generic Domain is to support the need of the Core and Supporting Domains. Below are the Generic Domains identified. <br />
 
 
-![Generic Domains](..//Images/GenericDomains.png)
+![Generic Domains](..//Images/GenericDomains.jpg)
 
