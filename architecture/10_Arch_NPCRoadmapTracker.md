@@ -1,3 +1,7 @@
+[<-- Back to Home](../README.md)
+[<-  NonProfit Community Registration](./9_Arch_NonProfitCommunityRegistration.md)
+[->  NonProfit Community Networking HUB](./11_Arch_NonProfitCommunityNetworkingHUB.md)
+
 ###  NPC Roadmap Tracker
 This is a critical process in the platform. 
 
@@ -29,3 +33,7 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 - Graph DB
 - BFF
 - CQRS
+
+[<-- Back to Home](../README.md)
+[<-  NonProfit Community Registration](./9_Arch_NonProfitCommunityRegistration.md)
+[->  NonProfit Community Networking HUB](./11_Arch_NonProfitCommunityNetworkingHUB.md)
