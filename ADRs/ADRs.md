@@ -9,7 +9,7 @@
 * [Spaced Based Architecture](ADR005_SpacedbasedArchitecture.md)
 * [Sharding](ADR006_Sharding.md)
 * [GraphDB](ADR007_GraphDB.md)
-* [Geo Services Integration.md](ADR008_GeoServicesIntegration.md)
+* [Geo Services Integration](ADR008_GeoServicesIntegration.md)
 * [Streams](ADR009_Streams.md)
 * [Blobstore](ADR010_Blobstore.md) (TO DO)
 * [OAuth](ADR011_OAuth.md) (TO DO)
