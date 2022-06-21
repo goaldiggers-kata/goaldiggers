@@ -43,6 +43,6 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 
 - [Graph DB](../ADRs/ADR007_GraphDB.md)
 - [BFF](../ADRs/ADR012_BFF.md)
-- [CQRS](./ADRs/ADR013_CQRS.md)
+- [CQRS](../ADRs/ADR013_CQRS.md)
 
 < [Home](../README.md) | [Previous](./7_Arch_CandidateOnboardingProcess.md) | [Next](./9_Arch_NonProfitCommunityRegistration.md) >
