@@ -1,20 +1,22 @@
+[<-- Back to Home](../README.md)
+
 # Process Discovery And DDD Context Map
 ## Table of Content
-- Overview 
-- Actors and Definitions
-- Core Domains 
-- Supporting Domains
-- Generic Domains 
+1. [Overview](#1_Overview) 
+2. [Actors and Definitions](#2_ActorsandDefinitions) 
+3. [Core Domains](#3_CoreDomains) 
+4. [Supporting Domains](#4_SupportingDomains)
+5. [Generic Domains](#5_GenericDomains) 
 
-## Overview 
+##  Overview <a name="1_Overview"></a>
 As part of the Domain discovery sessions, we have analyzed Spotlight Platform business domains and adopted **Domain Driven Design methodology**. As part of this analysis we have identified different **subdomains**. 
 
 Each **subdomain** resembles a set of interrelated, coherent use cases. These are defined based on the business domain and their functional requirements. In the discovery session the team has analyzed all the functional requirements to identify these subdomains.
 
-## Actors and Definitions
+## Actors and Definitions <a name="2_ActorsandDefinitions"></a>
 ![Actors and Definitions](..//Images/ActorsandDefinitions.jpg)
 
-## Core Domains 
+## Core Domains <a name="3_CoreDomains"></a>
 The main offering of the Spotlight Platform is **onboarding the Non Profit Community and Candidates**. Once the onboarding activity is completed, the Non-Profit community will be tagged to the Candidate to avail the Service offerings to achieve the career aspirations. <br />
 ![Core Domains](..//Images/CoreDomains.jpg)
 
@@ -42,7 +44,7 @@ So below are the Core Subdomains identified
       - This platform will be the networking hub for the NPC with a dependency on NP Community Domain.
       - For now primarily it is focused on United States but later based on the expansion plans of the Spotlight platform the capacity planning will have to change. 
 
-## Supporting Domains
+## Supporting Domains <a name="4_SupportingDomains"></a>
 The core intent of the Supporting Domain is to cater the needs of the Core Domains by leveraging the components identified in the Generic domain. 
 
 ![Supporting Domains](..//Images/SupportingDomains.jpg)
@@ -112,9 +114,11 @@ Below are the **Supporting Domains** identified.
 -	It holds the primary data to manage the workflow of the Candidate and **NPC registration process.**
 	It has analytics to provide recommendations for the **Candidate and NPC based on their interests.**
 	
-## Generic Domains 
+## Generic Domains <a name="5_GenericDomains"></a>
 The core crux of the Generic Domain is to support the need of the Core and Supporting Domains. Below are the Generic Domains identified. <br />
 
 
 ![Generic Domains](..//Images/GenericDomains.jpg)
+
+[<-- Back to Home](../README.md)
 
