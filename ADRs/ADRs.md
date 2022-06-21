@@ -1,3 +1,6 @@
+[<-- Back to Home](../README.md)
+[->  Cell Based Architecture](./ADR001_CellBasedArchitecture.md)
+
 # List of ADRs for Diversity Cyber Council 
 * [Cell Based Architecture](ADR001_CellBasedArchitecture.md)
 * [DDD and Bounded Context](ADR002_DDDandBoundedContext.md)
@@ -10,3 +13,6 @@
 * [Streams](ADR009_Streams.md)
 * [Blobstore](ADR010_Blobstore.md) (TO DO)
 * [OAuth](ADR011_OAuth.md) (TO DO)
+
+[<-- Back to Home](../README.md)
+[->  Cell Based Architecture](./ADR001_CellBasedArchitecture.md)
