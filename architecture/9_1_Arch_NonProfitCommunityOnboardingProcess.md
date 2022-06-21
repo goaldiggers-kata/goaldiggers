@@ -1,8 +1,8 @@
-< [Home](../README.md) | [Previous] | [Next] >
+< [Home](../README.md) | [Previous](./9_Arch_NonProfitCommunityRegistration.md) | [Next](10_Arch_NPCRoadmapTracker.md) >
 
 #  Non Profit Community Onboarding Process 
 
-**NPC, Community Leader and Administrator are the primary actors for onboarding the NPC onto the Spotlight Process**.
+**NPC, Community Leader and Administrator are the primary actors for onboarding the NPC on to the Spotlight Process**.
 
 - NPC has an intake and waiting for the Community Leader to onboard the NPC onto the platform.
 - As part of the registration the NPC has just raised the request against the service offerings and got the Intake ID assigned. 
@@ -42,8 +42,8 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 
 ## Key Patterns and ADRs identified for the Candidate Registration process:
 
-- [Micro Frontend]()
+- [Micro Frontend](../ADRs/ADR014_MicroFrontend.md)
 - [BFF](../ADRs/ADR012_BFF.md)
 - [CQRS](../ADRs/ADR013_CQRS.md)
 
-< [Home](../README.md) | [Previous] | [Next] >
+< [Home](../README.md) | [Previous](./9_Arch_NonProfitCommunityRegistration.md) | [Next](10_Arch_NPCRoadmapTracker.md) >
