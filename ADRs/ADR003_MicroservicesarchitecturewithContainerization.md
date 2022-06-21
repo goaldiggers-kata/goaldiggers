@@ -12,6 +12,10 @@ Industry have evolved so much that we will be getting many open source tools whi
 Proposed. 
 
 ## Consequences
-- Microservices will give greater flexibility and it is a distributed architecture. It gives eventual consistency, and all the distributed pieces must be stitched together. Thus fault tolerance, domino effect might be seen during synchronous communication.
-- Maintenance: As we have pool of services a standard governance have to imposed for implementation
-- Performance is often overhead as the services will do many network calls. To increase performance we have many techniques like caching, replication, graph
+- **Advantages**
+  - Microservices will give greater flexibility and it is a distributed architecture. It gives eventual consistency, and all the distributed pieces must be stitched together. Thus fault tolerance, domino effect might be seen during synchronous communication.
+  - Maintenance: As we have pool of services a standard governance have to imposed for implementation
+  - Smaller and faster deployments: Smaller codebases and scope = quicker deployments, which also allows  start to explore the benefits of Continuous Deployment.
+- **Disadvantages**
+  - Performance is often overhead as the services will do many network calls. To increase performance we have many techniques like caching, replication, graph.
+  - Global testing is difficult: Testing a microservices-based application can be cumbersome. With microservices, each dependent service needs to be confirmed before testing can occur. Consider building up the Test automation which caters to testing each of the services to be tested independently.
