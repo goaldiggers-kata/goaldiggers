@@ -1,10 +1,11 @@
-[<-- Back to Home](../README.md) ,
-[<- Architecture Overview](./1_Arch_Overview.md) ,
-[-> Architecture Component Diagram](./3_Arch_ArchitectureComponentDiagram.md)
+< [Home](../README.md) | [Previous](./1_Arch_Overview.md) | [Next](./3_Arch_ArchitectureComponentDiagram.md) >
 
 # Spotlight Context Diagram 
-![Spotlight Context Diagram](..//Images/SpotlightContextDiagram.png)
-## The Architectural characteristics that are identified are as below:
+  <p align="center">
+    <img src="..//Images/SpotlightContextDiagram.png" />
+  </p>
+  
+  ## The Architectural characteristics that are identified are as below:
 
 - Scalability
 - Modularity     
@@ -17,6 +18,4 @@
 - Workflow
 - Security
 
-[<-- Back to Home](../README.md) ,
-[<- Architecture Overview](./1_Arch_Overview.md) ,
-[-> Architecture Component Diagram](./3_Arch_ArchitectureComponentDiagram.md)
+< [Home](../README.md) | [Previous](./1_Arch_Overview.md) | [Next](./3_Arch_ArchitectureComponentDiagram.md) >
