@@ -390,21 +390,18 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 #### NPC Profile Creation: For the first time user. 
 
 - NPC doesn’t need to register in the Network HUB
-- When the NPC logs into the Hub for the first time the NPC Profile creation service checks for the existence of the profile. If the profile doesn't exist it will invoke the API to pull the information available in the NPC Core domain
-- Once the data is retrieved and the same gets persisted to the corresponding Sharded Index 
+- When the NPC logs into the Hub for the first time the NPC Profile creation service checks for the existence of the profile. If the profile doesn't exist it will invoke the API to pull the information available in the NPC Core domain.
+- Once the data is retrieved and the same gets persisted along with the corresponding Sharded Index.
  
 #### Login:
 - OAuth or Single sign on will be used to validate the NPC profile. The profile service will be hosted by the Non Profit Community domain.
 - Once the validation is complete NPC will be able to see other NPC profiles based on the NPC Network Recommendation Engine. This engine is part of NPC HUB Core domain. 
-- NPC Activity Tracker: NPC Network HUB will act as matching engine so that the most NPCs meet. This is to establish meaningful relationships to provide service offerings to the candidates. The core objective is to track the activity of the NPC on the HUB.
-- Pull Data: When a NPC does oAuth using FB, LinkedIn etc., it collects lots of meaningful information like location, distance, likes, dislikes. It also extracts lots of information from pictures from the Post to understand community activities, events, CSR etc., and these get appended to the NPC profile.
-- NPC Ranker: It is a critical background component which assigns a random scores and based on these NPC will be grouped. It is achieved using shard/distribute, as we can’t keep all the data in one Graph DB. 
-- NPC Service Offering Levelling technique: If one NPC is getting too much of matches/attention, to make it fair for NPCs, Networking normalizes this by not showing to other NPC but at the same time if any NPC is not showing attention the Recommendation Engine will start showing up to other NPC about it’s services.
-- Reply/Tagging: How willingly the NPC is replying and getting tagged to other NPCs
+- **Pull Data**: When a NPC does oAuth using FB, LinkedIn etc., it collects lots of meaningful information like location, distance, likes, dislikes. Depending on the social networking site from which the login has been initiated, this module is responsible for pulling the relevant information and persisted into the data store.
+- **NPC Activity Tracker**: NPC Network HUB will be a matching engine which allows different NPCs to meet. This is to make sure that different NPC's are collaborating with others to provide more meaningful services to the Candidates. The core objective of the NPC Activity Tracker as the name suggests, is to track the activity of the NPC on the HUB. This component feeds the necessary data to matching engine which will inturn utilize to provide the necessary recommendations to be projected onto the landing page.
+- **NPC Ranker**: The main intent of this component is to rank different NPCs based on the activities performed etc., This ranking module will be necessary to evaluate the overall performance of the NPC. The ranking is given based on the shard/distribute as we cannot keep all the data in one single Graph DB.
+- **Reply/Tagging**: How willingly the NPC is replying and getting tagged to other NPCs
 - User can upload photos. There is a limit, it’s governed by the Spotlight platform Administrator. All the photos/videos are persisted in a Blob store and the path in the Graph DB.
-- Neo4J is used as Graph DB.
-- Service makes a request to fetch the recommendations from the HUB Recommendation Engine. This is a preliminary set and cached index.
-- At the same time a domain event “Recommendations” is fired asynchronously to the engine for a refined recommendation.
+- **NPC Service Offering Levelling technique**: The main goal of this component is to make sure that all the NPC will have equal opportunity on providing the services to the Candidates. If one NPC is getting too much of matches/attention, to make it fair for all NPCs, this module normalizes this by not showing to other NPC but at the same time if any NPC is not showing attention the Recommendation Engine will start showing up to other NPC about the services being offerred.
 
 #### NPC Profile Creation on the NPC Network HUB
 
@@ -419,31 +416,37 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
    - Creating Channels
    - Voting Request for Community Service
     
+- This component will play key role in providing the necessary recommendations in the landing page for a NPC.
 - Each activity mentioned above will have Unique Microservices per Activity. Examples below
-- TAG: NPC Tag Activity Service
-- Posts: NPC POST Activity Service
-- Each activity above has separate stream. As the new feature gets added to the activities section, we will have to introduce new streams.
-- Each activity can be used for data analysis for different use cases.
-- All these streams are ultimately read by the Unique Activity Tracker Service. For every Activity we will have separate microservices. This gives flexibility to plan, scale, analyze, cache the data based on the user activity on the network hub.
-- For Instance NPC A, does only Likes the Posts. For this user more Posts and NPC offerings will be recommended.
-- Another NPC B, does lot of Posts about their service offerings. For this user more Notifications and Tag requests are sent.
-- All these activities are posted to the Sharded Graph DB.
+  - TAG: NPC Tag Activity Service
+  - Posts: NPC POST Activity Service
+- Each activity above has separate stream. As the new feature gets added to the activities section, new streams will have to be introduced.
+- The data will be used as a baseline for performing the necessary analysis for different use cases.
+- All these streams are consumed by the Unique Activity Tracker Service. For every Activity will have separate microservices. This gives flexibility to plan, scale, analyze, cache the data based on the user activity on the network hub. For example:
+  - For Instance NPC A, does only Likes the Posts. For this user more Posts and NPC offerings will be recommended.
+  - Another NPC B, does lot of Posts about their service offerings. For this user more Notifications and Tag requests are sent.
+  - All these activities are posted to the Sharded Graph DB.
 
 
 #### NPC Activity Tracker on NPC Network HUB
 ![NPC Activity Tracker on NPC Network HUB](..//Images/NPCActivityTrackeronNPCNetworkHUB.png) 
 
 #### NPC Collaboration Request: 
-This is a unique activity which helps the NPCs to collaborate.
-- NPC A sends collaboration Request to NPC B.
-- Collaboration request is posted into the unique collaboration stream and same gets notified to NPC B
-- If NPC B accepts the collaboration request both get tagged.
+This is a unique activity which helps the NPCs to collaborate. 
+  Scenario:
+  - NPC A sends collaboration Request to NPC B.
+  - Collaboration request is posted into the unique collaboration stream and same gets notified to NPC B
+  - If NPC B accepts the collaboration request of the NPC both get tagged.
 
 #### HUB Recommendation Engine: 
-It is core service which sends notifications, recommendations, matching requests and customizes the user content on the page. It’s a background thread gets domain events all the services.
-- Every Activity which the user does on the Network HUB it forwards the request to the Shard Indexer service.
-- Shard Indexer service exposes an API
-- Once the API is invoked it determines which shard to be queried based on the activity done by the user.
+It is core service which is executing as a backend process responsible for 
+  - Send notifications, 
+  - Identify Recommendations, 
+  - Matching Requests,
+  - Customize the user content on the page. 
+- Every Activity which the user performs on the Network HUB is forwarded to the Shard Indexer Service.
+- Shard Indexer service exposes an API.
+- Once the API is invoked, it determines which shard to be queried based on the activity done by the user.
 - Indexer queries all the sharded graphs to fetch the list based on the activity search and return the list to the Recommendation Engine. 
 - Engine applies to filter on the list bases on the NPC Preferences and returns final list.
 - Recommendation Engine also pulls data from NPC Roadmap Tracker subdomain.
@@ -452,22 +455,24 @@ It is core service which sends notifications, recommendations, matching requests
 #### NPC Recommendation Engine
 ![NPC Recommendation Engine](..//Images/NPCRecommendationEngine.png) 
 
-#### Shard Indexer: This service provides the data from the Shard Graph DB. 
+#### Shard Indexer:  
 
-- This process will have two different set of services
+- This component provides the data from the Shard Graph DB.
+- Exposes two different set of services
 - One pool of services which will keep helping the 
   - **NPC Match Notification Service:** For provide the match notifications
   - **Match NPCs:** For providing match recommendations.  
-- For reads, the Indexer service implements queries independently
-- For each reading activity we will have a separate instance and whereas for the transactional area we will have separate service. This implementation is primarily because the demands for the queries are drastically different. 
-- This domain holds **Shard DB Architecture** which is very critical to handle the traffic. The proposed architecture is to divide data into horizontal partitions that are organized into various servers. Primary reasons to shard
-- Data will be siloed into separate instances based on different NPC activities
-  - By Region
-  - Action  	
-  - By Service Offerings
-  - By Likes
-  - Events
-  - To minimize the latency
+- The other pool is For reads, the Indexer service implements queries independently.
+  - For each reading activity we will have a separate instance and whereas for the other write/update transactions will have a separate service. This implementation is primarily because the demands for the queries are predominantly different. 
+- This domain holds **Shard DB Architecture** which is very critical to handle the traffic. The proposed architecture is to divide data into horizontal partitions that are organized into various servers. 
+- Primary reasons to select the Shard DB Architecture are given below:
+  - Data will be siloed into separate instances based on different NPC activities
+    - By Region
+    - Action  	
+    - By Service Offerings
+    - By Likes
+    - Events
+    - To minimize the latency
   
 **Neo4J Fabric** is the solution for graph sharding which allows the NPCs to break the graphs based on the relationships. It allows to store smaller graphs and store them in separate databases. 
 
@@ -479,5 +484,5 @@ It is core service which sends notifications, recommendations, matching requests
 - The above architecture representation has 2 coordinated shards which will give us always high availability and We have separated the fabric database to solely handle all of the load and processing of requests.
 
 #### Data Division
-- As part of the analysis the context and the data definitions will be clearly defined and how the data has to be modeled so that we can have subgraphs.
-- All the shards will be divided based on activity or on location. 
+- As part of the analysis, the context and the data definitions will be clearly defined and how the data has to be modeled which will be the basis for creating the sub-graphs.
+- All the shards will be divided based on the NPC activities.
