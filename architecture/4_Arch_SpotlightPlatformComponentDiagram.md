@@ -1,9 +1,11 @@
-[<-- Back to Home](../README.md) ,
-[-> Architecture Component Diagram](./3_Arch_ArchitectureComponentDiagram.md)
-[-> Domain Context Map to Microservices Mapping](./5_Arch_DomainContextMaptoMicroservicesMapping.md)
+< [Home](../README.md) | [Previous](./3_Arch_ArchitectureComponentDiagram.md) | [Next](./5_Arch_DomainContextMaptoMicroservicesMapping.md) >
 
 #  Spotlight Platform Component Diagram 
-![Spotlight Platform Component Diagram](..//Images/SpotlightPlatformComponentDiagram.png)
+
+<p align="center">
+  <img src="..//Images/SpotlightPlatformComponentDiagram.png" />
+</p>
+
 
 **Cell is a representation of a Subdomain and divides the area of the business between the Candidate and Non-Profit Community**. 
 
@@ -15,12 +17,15 @@ Each cell has a bounded context and solves the problem statement with the help o
 
   - **Asynchronous:** All these communication for data update propagation across the cell is based on Domain Events and proposal is to use Streaming platform Kafka.
   - **Synchronous:** All these communication with be Restful services using an API gateway.
-  
-![Cell Based Asynchronous Ssynchronous](..//Images/CellAsynchronousSsynchronous.png) 
 
-  - **Request Response** API types provide an abstraction over everything that can be queried or activated based on the subdomain process needs.
-  - **Domain Events** allow action in real-time based on changes that occur during the business process and allowing subdomain to react on the fact.
-  - **Streams** capture the ongoing evolving nature of the environment, allowing pattern matching and analysis. It is primarily used in Networking HUB Core subdomain    to capture the Non Profit community activities on the HUB.
+<p align="center">
+  <img src="..//Images/CellAsynchronousSsynchronous.png" />
+</p>
+
+
+  - **Request Response:** API types provide an abstraction over everything that can be queried or activated based on the subdomain process needs.
+  - **Domain Events:** allow action in real-time based on changes that occur during the business process and allowing subdomain to react on the fact.
+  - **Streams:** capture the ongoing evolving nature of the environment, allowing pattern matching and analysis. It is primarily used in Networking HUB Core subdomain    to capture the Non Profit community activities on the HUB.
 
 - Every Cell will have a document to depict all its offerings to other subdomains.
 - All the capabilities which are expected to give value to it’s **external subdomains** will be exposed as network accessible endpoints. These endpoints will have APIs hosted. 
@@ -31,12 +36,10 @@ Each cell has a bounded context and solves the problem statement with the help o
      - Each cell will have it’s own security rules, policies and approaches.
      - Proposal is to use to Identity Provider as Security Management is a Generic Subdomain stationed outside the Subdomains. 
 
-- For all the microservices and components we will be adopting **container model**. 
+- For all the microservices and components we will be adopting **container model**.
 - Each container image instance represents a single process. 
-- Each container image works as a boundary for a process, it will have primitives that can be used to scale or batch the process. **When the process completes, the container lifecycle ends**. 
+- Each container image works as a boundary for a process, it will have primitives that can be used to scale or batch the process. **When the process completes, the container lifecycle ends**.
 - Containers will also represent long-running processes like web servers and also be short-lived processes like batch jobs, implemented using Kubernetes Cron jobs. 
 - If the process fails, the container ends, and the orchestrator takes over. The orchestrator will have how many instances should be running and if one fails, the orchestrator will create another container instance to replace the failed process.
 
-[<-- Back to Home](../README.md) ,
-[-> Architecture Component Diagram](./3_Arch_ArchitectureComponentDiagram.md)
-[-> Domain Context Map to Microservices Mapping](./5_Arch_DomainContextMaptoMicroservicesMapping.md)
+< [Home](../README.md) | [Previous](./3_Arch_ArchitectureComponentDiagram.md) | [Next](./5_Arch_DomainContextMaptoMicroservicesMapping.md) >
