@@ -1,3 +1,5 @@
+< [Back to Home](../README.md) -  [Spot Light Context Diagram](./2_Arch_SpotlightContextDiagram.md) >
+
 # Overview 
 To solve the primary business problem our approach was to identify a domain model that reflects the **Spotlight platform vision.** 
 
@@ -10,3 +12,6 @@ It implies that the Core Subdomains below can have their independent journey.
 - Non Profit Community. 
 - Candidate and NPC Matching.
 - Networking HUB.
+
+
+< [Back to Home](../README.md) -  [Spot Light Context Diagram](./2_Arch_SpotlightContextDiagram.md) >
