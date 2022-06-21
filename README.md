@@ -11,7 +11,7 @@ Below is the introduction of the Team Members of Goal Diggers
 
 ![Goal Diggers Architecture Kata](/Images/logo.png)
 
-## About Diversity Cyber Council
+## About Diversity Cyber Council 
 
 Diversity Cyber Council is a 501c3 Non-Profit that serves under-represented demographics in the tech industry by facilitating education, training, and staffing opportunities to establish a sustainable and diverse talent pipeline to the workforce. Odie Gray is the founder and president of the Diversity Cyber Council with extensive experience on cyber security, business strategy development and transformation for last 15 years. As a thought leader he has delivered strategic value to his clients by developing new cyber security service offerings to his clients by developing new cybersecurity offerings and programs and managing teams of industry leading organizations.
 
@@ -19,6 +19,7 @@ Diversity Cyber Council is a 501c3 Non-Profit that serves under-represented demo
 
 * It is offering 3 courses and it helps the underserved communities to register to these courses with a standard form. After the aspirant gets registered he gets notified on mail.
 * In addition the platform also allows the non-profit organizations to register and help in facilitating the education, training and staffing of underrepresented groups in cybersecurity. For now they can donate, or partner to provide apprentice program on cyber security or become an employer partner or a strategic partner.
+* [website](https://www.diversitycybercouncil.com/)
 
 ### Program Requirements:
 
@@ -38,11 +39,12 @@ The Spotlight platform requiremement can be found in the below link
 ## Table of Contents
 
 1. [Process Discovery and DDD Context Map](architecture/ProcessDiscoveryandDDDContextMap.md) 
-2. [Architecture](architecture/ArchitectureOverview.md) 
-3. [Implementation Approach :: Hexagon Architecture](architecture/HexagonArchitecture.md)
-4. [Deployment View](architecture/DeploymentView.md)
-5. [ADRs](ADRs/ADRs.md) 
-6. References
+2. [Architecture(To Be Deprecated)](architecture/ArchitectureOverview.md) 
+3. [Architecture(New)](architecture/1_Arch_Overview.md) 
+4. [Implementation Approach :: Hexagon Architecture](architecture/HexagonArchitecture.md)
+5. [Deployment View](architecture/DeploymentView.md)
+6. [ADRs](ADRs/ADRs.md) 
+7. References
      * [Miro - Process Discovery](https://miro.com/app/board/uXjVOySr1RA=/?share_link_id=321299907325)
      * [C4 Model](https://c4model.com/)
      * [Cell Architecture](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md)
