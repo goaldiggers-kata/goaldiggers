@@ -1,3 +1,7 @@
+[<-- Back to Home](../README.md)
+[<-  Candidate Roadmap Tracker](./8_Arch_CandidateRoadmapTracker.md)
+[->  NPC Roadmap Tracker](./10_Arch_NPCRoadmapTracker.md)
+
 ###  Non Profit Community Registration
 
 **Non Profit Community is the primary actor for the Spotlight Platform.** 
@@ -38,3 +42,7 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 - Micro Frontend
 - BFF
 - CQRS
+
+[<-- Back to Home](../README.md)
+[<-  Candidate Roadmap Tracker](./8_Arch_CandidateRoadmapTracker.md)
+[->  NPC Roadmap Tracker](./10_Arch_NPCRoadmapTracker.md)
