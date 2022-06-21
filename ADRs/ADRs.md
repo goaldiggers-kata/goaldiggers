@@ -3,7 +3,7 @@
 * [DDD and Bounded Context](ADR002_DDDandBoundedContext.md)
 * [Microservices Architecture with Containerization](ADR003_MicroservicesarchitecturewithContainerization.md)
 * [EventDrivenArchitecture](ADR004_EventDrivenArchitecture.md)
-* [Spaced BasedA rchitecture](ADR005_SpacedbasedArchitecture.md)
+* [Spaced Based Architecture](ADR005_SpacedbasedArchitecture.md)
 * [Sharding](ADR006_Sharding.md)
 * [GraphDB](ADR007_GraphDB.md)
 * [Geo Services Integration.md](ADR008_GeoServicesIntegration.md)
