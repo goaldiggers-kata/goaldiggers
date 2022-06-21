@@ -1,10 +1,8 @@
-[<-- Back to Home](../README.md)
-[<-  Candidate Roadmap Tracker](./8_Arch_CandidateRoadmapTracker.md)
-[->  NPC Roadmap Tracker](./10_Arch_NPCRoadmapTracker.md)
+< [Home](../README.md) | [Previous](./8_Arch_CandidateRoadmapTracker.md) | [Next](./10_Arch_NPCRoadmapTracker.md) >
 
-###  Non Profit Community Registration
+# Non Profit Community Registration
 
-**Non Profit Community is the primary actor for the Spotlight Platform.** 
+**Non Profit Community is the primary actor for the Spotlight Platform**.
 
 - NPC will register for program offerings or services which can be utilized by the onboarded candidates.
 - As part of the process discovery we have derived the below flow.
@@ -16,13 +14,17 @@
 - NPC gets notified with email to complete the profile after the mail id/mobile gets validated.
 - Once the profile is created, administrator will approve and the Intake ID is assigned.
 
-#### Prerequisites/Input: NA
+## Prerequisites:
+- NA
 
-#### Non Profit Community Registration Process Discovery
+## Process Discovery:
 
-![HighlevelstepsandProcessdiscovery](..//Images/HighlevelstepsandProcessdiscovery.png) 
+<p align="center">
+  <img src="..//Images/HighlevelstepsandProcessdiscovery.png" />
+</p>
 
-#### Output:
+
+## Output:
 - Assessment Complete and Intake Assigned.
 
 #### Subdomain and Bounded Context:
@@ -33,16 +35,17 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 - **Supporting Subdomain:** NPC Assessment Engine
 - **Generic Subdomains:** Platform Services, Status Manager, Notification Services
 
-#### Non Profit Community Registration Sequence Diagram
+## Non Profit Community Registration Sequence Diagram
 
-![Non-Profit Community Registration Process](..//Images/Non-ProfitCommunityRegistrationProcess.png) 
+<p align="center">
+  <img src="..//Images/Non-ProfitCommunityRegistrationProcess.png" />
+</p>
+
 
 #### Key Patterns and ADRs identified for the Candidate Registration process
 
-- Micro Frontend
-- BFF
-- CQRS
+- [Micro Frontend](../ADRs/ADR014_MicroFrontend.md)
+- [BFF](../ADRs/ADR012_BFF.md)
+- [CQRS](../ADRs/ADR013_CQRS.md)
 
-[<-- Back to Home](../README.md)
-[<-  Candidate Roadmap Tracker](./8_Arch_CandidateRoadmapTracker.md)
-[->  NPC Roadmap Tracker](./10_Arch_NPCRoadmapTracker.md)
+< [Home](../README.md) | [Previous](./8_Arch_CandidateRoadmapTracker.md) | [Next](./10_Arch_NPCRoadmapTracker.md) >
