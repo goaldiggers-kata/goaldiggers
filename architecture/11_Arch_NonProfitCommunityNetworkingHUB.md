@@ -1,3 +1,7 @@
+[<-- Back to Home](../README.md)
+[->  NPC Roadmap Tracker](./10_Arch_NPCRoadmapTracker.md)
+[->  NPC Activity Tracker on NPC Network HUB](./12_Arch_NPCActivityTrackeronNPCNetworkHUB.md)
+
 ###  Non Profit Community Networking HUB
 
 The section covers all the functionalities and system architecture for the Network HUB. From the strategy perspective as Networking HUB is a core subdomain our approach towards architecture is different. 
@@ -87,3 +91,7 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 - For Instance NPC A, does only Likes the Posts. For this user more Posts and NPC offerings will be recommended.
 - Another NPC B, does lot of Posts about their service offerings. For this user more Notifications and Tag requests are sent.
 - All these activities are posted to the Sharded Graph DB.
+
+[<-- Back to Home](../README.md)
+[->  NPC Roadmap Tracker](./10_Arch_NPCRoadmapTracker.md)
+[->  NPC Activity Tracker on NPC Network HUB](./12_Arch_NPCActivityTrackeronNPCNetworkHUB.md)
