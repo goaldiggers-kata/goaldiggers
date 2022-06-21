@@ -20,4 +20,9 @@ This approach is the backbone for the complete platform design.
 Proposed. 
 
 ## Consequences
-
+- High Cost of Ownership
+- DDD projects require domain experts that are often expensive to hire, since they hold valuable knowledge. Moreover DDD requires strong skills on the modeler side. In particular they have to be:
+  - Humble, since they have to accept their ignorance and learn from an expert
+  - Really skilled in OOP
+  - Diligent, since they have to track decisions
+  - Communicative, since they have to explain the domain to the other devs (even through documentation)
