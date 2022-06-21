@@ -1,4 +1,8 @@
-#  Candidate Registration
+[<-- Back to Home](../README.md)
+[<- Domain Context Map to Microservices Mapping](./5_Arch_DomainContextMaptoMicroservicesMapping.md)
+[-> CandidatevOnboardingvProcess](./7_Arch_CandidateOnboardingProcess.md)
+
+#Candidate Registration
 
 ## Process Discovery:
 **Candidate is the primary actor for the Spotlight Platform** to avail the program offerings provided by the Non Profit Communities. As part of the process discovery we have derived the below flow.
@@ -44,3 +48,7 @@ Primary actors involved in the **Candidate Registration process are Candidate an
 Key Patterns and ADRs identified for the Candidate Registration process
 - BFF
 - CQRS
+
+[<-- Back to Home](../README.md)
+[<- Domain Context Map to Microservices Mapping](./5_Arch_DomainContextMaptoMicroservicesMapping.md)
+[-> CandidatevOnboardingvProcess](./7_Arch_CandidateOnboardingProcess.md)
