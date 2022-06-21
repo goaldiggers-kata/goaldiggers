@@ -1,3 +1,7 @@
+[<-- Back to Home](../README.md)
+[<-  Candidate Registration](./6_Arch_CandidateRegistration.md)
+[->  Candidate Roadmap Tracker](./8_Arch_CandidateRoadmapTracker.md)
+
 ###  Candidate Onboarding Process:
 
 - **Candidate and Mentor both are primary actors for the candidate onboarding process.
@@ -41,3 +45,7 @@ Below are the **Core, Generic and Supporting Subdomains*** which get involved fo
 #### Key Patterns and ADRs identified for the Candidate Registration process
 - BFF
 - CQRS
+
+[<-- Back to Home](../README.md)
+[<-  Candidate Registration](./6_Arch_CandidateRegistration.md)
+[->  Candidate Roadmap Tracker](./8_Arch_CandidateRoadmapTracker.md)
