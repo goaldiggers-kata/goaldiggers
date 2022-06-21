@@ -51,6 +51,6 @@ Primary actors involved in the **Candidate Registration process are Candidate an
 ## ADRs:
 Key Patterns and ADRs identified for the Candidate Registration process
 - [BFF](../ADRs/ADR012_BFF.md)
-- [CQRS](./ADRs/ADR013_CQRS.md)
+- [CQRS](../ADRs/ADR013_CQRS.md)
 
 < [Home](../README.md) | [Previous](./5_Arch_DomainContextMaptoMicroservicesMapping.md) | [Next](./7_Arch_CandidateOnboardingProcess.md) >
