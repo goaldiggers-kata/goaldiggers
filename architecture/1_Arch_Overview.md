@@ -1,4 +1,4 @@
-<- [Home](../README.md) | [Next](./2_Arch_SpotlightContextDiagram.md) ->
+< [Home](../README.md) | [Previous](./1_Arch_TableofContent.md) | [Next](./3_Arch_ArchitectureComponentDiagram.md) >
 
 # Architecture Overview 
 To solve the primary business problem our approach was to identify a domain model that reflects the **Spotlight platform vision**. 
@@ -14,4 +14,4 @@ It implies that the Core Subdomains below can have their independent journey.
 - Networking HUB.
 
 
-<- [Home](../README.md) | [Next](./2_Arch_SpotlightContextDiagram.md) ->
+< [Home](../README.md) | [Previous](./1_Arch_TableofContent.md) | [Next](./3_Arch_ArchitectureComponentDiagram.md) >
