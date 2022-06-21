@@ -1,3 +1,7 @@
+[<-- Back to Home](../README.md)
+[<-  Candidatev On boarding Process](./7_Arch_CandidateOnboardingProcess.md)
+[->  NonProfit Community Registration](./9_Arch_NonProfitCommunityRegistration.md)
+
 ###  Candidate Roadmap Tracker
 This is a critical component of the platform. 
 **The primary actor for this process will be Candidate and the Mentor.** All the critical milestones of the candidate which were aligned during the initial meetings will be updated by the mentor based on the regular assessments/meetings.
@@ -34,3 +38,7 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 - Graph DB
 - BFF
 - CQRS
+
+[<-- Back to Home](../README.md)
+[<-  Candidatev On boarding Process](./7_Arch_CandidateOnboardingProcess.md)
+[->  NonProfit Community Registration](./9_Arch_NonProfitCommunityRegistration.md)
