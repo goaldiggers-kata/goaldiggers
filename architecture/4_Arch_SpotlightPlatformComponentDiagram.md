@@ -1,3 +1,7 @@
+[<-- Back to Home](../README.md) ,
+[-> Architecture Component Diagram](./3_Arch_ArchitectureComponentDiagram.md)
+[-> Domain Context Map to Microservices Mapping](./5_Arch_DomainContextMaptoMicroservicesMapping.md)
+
 #  Spotlight Platform Component Diagram 
 ![Spotlight Platform Component Diagram](..//Images/SpotlightPlatformComponentDiagram.png)
 
@@ -32,3 +36,7 @@ Each cell has a bounded context and solves the problem statement with the help o
 - Each container image works as a boundary for a process, it will have primitives that can be used to scale or batch the process. **When the process completes, the container lifecycle ends**. 
 - Containers will also represent long-running processes like web servers and also be short-lived processes like batch jobs, implemented using Kubernetes Cron jobs. 
 - If the process fails, the container ends, and the orchestrator takes over. The orchestrator will have how many instances should be running and if one fails, the orchestrator will create another container instance to replace the failed process.
+
+[<-- Back to Home](../README.md) ,
+[-> Architecture Component Diagram](./3_Arch_ArchitectureComponentDiagram.md)
+[-> Domain Context Map to Microservices Mapping](./5_Arch_DomainContextMaptoMicroservicesMapping.md)
