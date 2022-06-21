@@ -5,7 +5,7 @@ Microservice architecture is an excellent approach in building decentralized Spo
 We will use the Microservices Architecture in implementing the complete platform and they will be containerized using Kubernetes.
 
 ## Rationale 
-We will be implementing the Spotlight platform using Microservices architecture as the cell based architecture approach will help us in identifying the boundaries. Each cell which has been identified holds a subdomain will fleet of microservices which are containerized. It holds it owns persistent volume, health monitors, observability etc., Based on the subdomain requirement each microservice will adopt it’s own design. Each microservice will be coarse-grained domain unit.
+We will be implementing the Spotlight platform using Microservices architecture as the cell based architecture approach will help us in identifying the boundaries. Each cell which has been identified holds a subdomain will fleet of microservices which are containerized. It has it's own persistent volume, health monitors, observability etc., Based on the subdomain requirement each microservice will adopt it’s own design. Each microservice will be coarse-grained domain unit.
 Industry have evolved so much that we will be getting many open source tools which help to design microservices it’s own design style based on the business domain need.
 
 ## Status
