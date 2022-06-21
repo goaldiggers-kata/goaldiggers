@@ -1,10 +1,10 @@
-< [Back to Home](../README.md) -  [Next Spot Light Context Diagram](./2_Arch_SpotlightContextDiagram.md) >
+<- [Home](../README.md) | [Next](./2_Arch_SpotlightContextDiagram.md) ->
 
-# Overview 
-To solve the primary business problem our approach was to identify a domain model that reflects the **Spotlight platform vision.** 
+# Architecture Overview 
+To solve the primary business problem our approach was to identify a domain model that reflects the **Spotlight platform vision**. 
 
-We have used **DDD and Bounded Context patterns. Each bounded context will have a fleet of microservice that will have the flexibility of employing different patterns having different responsibilities to solve the Domain problem.**
-Proposal is to use **Cell Based Architecture** which gives Spotlight platform to be built as a decentralized cloud native application. **Each Cell represents a Subdomain’s bounded context which can be independently developed, deployed, managed, and will be observable.**
+We have used **DDD and Bounded Context patterns. Each bounded context will have a fleet of microservice that will have the flexibility of employing different patterns having different responsibilities to solve the Domain problem**.
+Proposal is to use **Cell Based Architecture** which gives Spotlight platform to be built as a decentralized cloud native application. **Each Cell represents a Subdomain’s bounded context which can be independently developed, deployed, managed, and will be observable**.
 
 It implies that the Core Subdomains below can have their independent journey. 
 
@@ -14,4 +14,4 @@ It implies that the Core Subdomains below can have their independent journey.
 - Networking HUB.
 
 
-< [Back to Home](../README.md) -  [Next Spot Light Context Diagram](./2_Arch_SpotlightContextDiagram.md) >
+<- [Home](../README.md) | [Next](./2_Arch_SpotlightContextDiagram.md) ->
