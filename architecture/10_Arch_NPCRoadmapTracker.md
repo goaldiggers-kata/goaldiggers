@@ -1,8 +1,6 @@
-[<-- Back to Home](../README.md)
-[<-  NonProfit Community Registration](./9_Arch_NonProfitCommunityRegistration.md)
-[->  NonProfit Community Networking HUB](./11_Arch_NonProfitCommunityNetworkingHUB.md)
+< [Home](../README.md) | [Previous](./9_Arch_NonProfitCommunityRegistration.md) | [Next](./11_Arch_NonProfitCommunityNetworkingHUB.md) >
 
-###  NPC Roadmap Tracker
+#  NPC Roadmap Tracker
 This is a critical process in the platform. 
 
 - **The primary actor for this process will be Community Leader, NPC and Administrator.** 
@@ -10,13 +8,16 @@ This is a critical process in the platform.
 - NPC Roadmap Tracker captures all the regular meeting and provides all the data to the NPC Metrics management.
 - NPC Metrics Management plays a critical role and the Decision Engine will validates and assigns the NPC Stack ranking.
 
-#### Output:
+## Prerequisites:
+- NA
+
+## Output:
 
 - Completion of Program Offering services per candidate.
 - Helps in NPC Capacity Planning 
 - Administrator will be able to assess the bandwidth of the NPC.
 
-#### Subdomain and Bounded Context:
+## Subdomain and Bounded Context:
 
 Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
 
@@ -24,16 +25,18 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 - **Supporting Subdomain:** NPC Roadmap Tracker, NPC Metrics Management, Decision Engine
 - **Generic Subdomains:** Platform Services, Status Manager, Notification Services
 
-#### Non-Profit Community Roadmap Tracker Sequence Flow:
+## Non-Profit Community Roadmap Tracker Sequence Flow:
 
-![Non-Profit Community Roadmap Tracker Sequence Flow](..//Images/Non-ProfitCommunityRoadmapTrackerSequenceFlow.png) 
 
-#### Key Patterns and ADRs identified for the Candidate Registration process:
 
-- Graph DB
-- BFF
-- CQRS
+<p align="center">
+  <img src="..//Images/Non-ProfitCommunityRoadmapTrackerSequenceFlow.png" />
+</p>
 
-[<-- Back to Home](../README.md)
-[<-  NonProfit Community Registration](./9_Arch_NonProfitCommunityRegistration.md)
-[->  NonProfit Community Networking HUB](./11_Arch_NonProfitCommunityNetworkingHUB.md)
+## Key Patterns and ADRs identified for the  NPC Roadmap Tracker process:
+
+- [Graph DB](../ADRs/ADR007_GraphDB.md)
+- [BFF](../ADRs/ADR012_BFF.md)
+- [CQRS](../ADRs/ADR013_CQRS.md)
+
+< [Home](../README.md) | [Previous](./9_Arch_NonProfitCommunityRegistration.md) | [Next](./11_Arch_NonProfitCommunityNetworkingHUB.md) >
