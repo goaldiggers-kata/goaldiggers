@@ -50,6 +50,6 @@ Below are the **Core, Generic and Supporting Subdomains** which get involved for
  
 ## Key Patterns and ADRs identified for the Candidate Onboarding process
 - [BFF](../ADRs/ADR012_BFF.md)
-- [CQRS](./ADRs/ADR013_CQRS.md)
+- [CQRS](../ADRs/ADR013_CQRS.md)
 
 < [Home](../README.md) | [Previous](./6_Arch_CandidateRegistration.md) | [Next](./8_Arch_CandidateRoadmapTracker.md) >
