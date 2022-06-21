@@ -1,6 +1,4 @@
-[<-- Back to Home](../README.md) ,
-[<- Spotlight Plat form Component Diagram](./4_Arch_SpotlightPlatformComponentDiagram.md)
-[-> Candidate Registration](./6_Arch_CandidateRegistration.md)
+< [Home](../README.md) | [Previous](./4_Arch_SpotlightPlatformComponentDiagram.md) | [Next](./6_Arch_CandidateRegistration.md) >
 
 ###  Domain Context Map to Microservices Mapping
 
@@ -12,6 +10,4 @@ This section gives the **mapping for the Subdomains, Process specific component 
 - **Non Profit Onboarding onto Spotlight platform**.
 - **Non Profit Networking HUB**.
 
-[<-- Back to Home](../README.md) ,
-[<- Spotlight Plat form Component Diagram](./4_Arch_SpotlightPlatformComponentDiagram.md)
-[-> Candidate Registration](./6_Arch_CandidateRegistration.md)
+< [Home](../README.md) | [Previous](./4_Arch_SpotlightPlatformComponentDiagram.md) | [Next](./6_Arch_CandidateRegistration.md) >
