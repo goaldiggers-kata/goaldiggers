@@ -1,6 +1,4 @@
-[<-- Back to Home](../README.md)
-[<-  NPC Activity Tracker on NPC Network HUB](./12_Arch_NPCActivityTrackeronNPCNetworkHUB.md)
-[->  Fabric Causal Cluster & No single point of failure](./14_Arch_FabricCausalClusterandNosinglepointoffailure.md)
+< [Home](../README.md) | [Previous](./12_Arch_NPCActivityTrackeronNPCNetworkHUB.md) | [Next](./14_Arch_FabricCausalClusterandNosinglepointoffailure.md) >
 
 # HUB Recommendation Engine: 
 It is core service which sends notifications, recommendations, matching requests and customizes the user content on the page. It’s a background thread gets domain events all the services.
@@ -34,6 +32,4 @@ It is core service which sends notifications, recommendations, matching requests
   
 **Neo4J Fabric** is the solution for graph sharding which allows the NPCs to break the graphs based on the relationships. It allows to store smaller graphs and store them in separate databases.
 
-[<-- Back to Home](../README.md)
-[<-  NPC Activity Tracker on NPC Network HUB](./12_Arch_NPCActivityTrackeronNPCNetworkHUB.md)
-[->  Fabric Causal Cluster & No single point of failure](./14_Arch_FabricCausalClusterandNosinglepointoffailure.md)
+< [Home](../README.md) | [Previous](./12_Arch_NPCActivityTrackeronNPCNetworkHUB.md) | [Next](./14_Arch_FabricCausalClusterandNosinglepointoffailure.md) >
