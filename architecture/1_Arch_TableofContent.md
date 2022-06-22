@@ -2,12 +2,10 @@
 # Table of Content
 - [Architecture Overview](./1_Arch_Overview.md) 
 - [Spotlight Context Diagram](./2_Arch_SpotlightContextDiagram.md) 
-- [Architecture Component Diagram](./3_Arch_ArchitectureComponentDiagram.md)
-- [Spotlight Platform Component Diagram](./4_Arch_SpotlightPlatformComponentDiagram.md)
 - [Domain Context Map to Microservices Mapping](./5_Arch_DomainContextMaptoMicroservicesMapping.md)
 - [Candidate Registration](./6_Arch_CandidateRegistration.md)
 - [Candidate Onboarding Process](./7_Arch_CandidateOnboardingProcess.md)
-- [Candidate Roadmap Tracker](./8_Arch_CandidateRoadmapTracker.md)
+- [Candidate Ro[//]: # (Comment) Tracker](./8_Arch_CandidateRoadmapTracker.md)
 - [Non Profit Community Registration](./9_Arch_NonProfitCommunityRegistration.md)
 - [NPC Roadmap Tracker](./10_Arch_NPCRoadmapTracker.md)
 - [Non Profit Community Networking Hub](./11_Arch_NonProfitCommunityNetworkingHUB.md)
