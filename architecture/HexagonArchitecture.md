@@ -2,7 +2,7 @@
 
 # Hexagon Architecture
 
-The adoption of DDD has given us the flexibility of dividing the system into several loosely coupled components and allow us to build the layers. These layers bring organized way to implement the business logic. Every Hexagon is a subdomain by itself. Every subdomain implementation will adpot Hexagon Architecture.
+The adoption of DDD has given us the flexibility of dividing the system into several loosely coupled components and allow us to build the layers. These layers bring organized way to implement the business logic. Every Hexagon is a subdomain by itself. Every subdomain implementation will adopt Hexagon Architecture.
 
 ## Application Layer:
 The business processes that get triggered by the actors are in our core Application Layer. In the application layer we have class 0 services implies highly available services. 
