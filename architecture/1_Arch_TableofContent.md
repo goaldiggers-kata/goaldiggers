@@ -13,6 +13,6 @@
 - [Non Profit Community Networking Hub](./11_Arch_NonProfitCommunityNetworkingHUB.md)
 - [NPC Activity Tracker on NPC Network Hub](./12_Arch_NPCActivityTrackeronNPCNetworkHUB.md)
 - [NPC Recommendation Engine](./13_Arch_NPCRecommendationEngine.md)
-- [Fabric Causal Cluster and No single point of failure](./14_Arch_FabricCausalClusterandNosinglepointoffailure.md)
+- [Fabric Casual Cluster and No single point of failure](./14_Arch_FabricCausalClusterandNosinglepointoffailure.md)
 
 <- [Home](../README.md) 
