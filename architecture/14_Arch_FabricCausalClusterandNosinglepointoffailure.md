@@ -1,5 +1,4 @@
-[<-- Back to Home](../README.md)
-[<-  NPC Recommendation Engine](./13_Arch_NPCRecommendationEngine.md)
+< [Home](../README.md) | [Previous](./13_Arch_NPCRecommendationEngine.md) >
 
 # Fabric Causal Cluster and No single point of failure
 ![Fabric Causal Cluster and No single point of failure](..//Images/FabricCausalClusterandNosinglepointoffailure.png) 
@@ -12,5 +11,4 @@
 - As part of the analysis the context and the data definitions will be clearly defined and how the data has to be modeled so that we can have subgraphs.
 - All the shards will be divided based on activity or on location. 
 
-[<-- Back to Home](../README.md)
-[<-  NPC Recommendation Engine](./13_Arch_NPCRecommendationEngine.md)
+< [Home](../README.md) | [Previous](./13_Arch_NPCRecommendationEngine.md) >
