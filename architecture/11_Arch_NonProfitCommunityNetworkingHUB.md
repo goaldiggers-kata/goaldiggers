@@ -1,8 +1,7 @@
-[<-- Back to Home](../README.md)
-[->  NPC Roadmap Tracker](./10_Arch_NPCRoadmapTracker.md)
-[->  NPC Activity Tracker on NPC Network HUB](./12_Arch_NPCActivityTrackeronNPCNetworkHUB.md)
+< [Home](../README.md) | [Previous](./10_Arch_NPCRoadmapTracker.md) | [Next](./12_Arch_NPCActivityTrackeronNPCNetworkHUB.md) >
 
-###  Non Profit Community Networking HUB
+
+#  Non Profit Community Networking HUB
 
 The section covers all the functionalities and system architecture for the Network HUB. From the strategy perspective as Networking HUB is a core subdomain our approach towards architecture is different. 
 
@@ -11,7 +10,7 @@ Below is the process discovery which was done as part of the event storming sess
 Non Profit Community Networking HUB Process Discovery
 ![NPC Networking Process HUB](..//Images/NetworkingHubProcess.PNG) 
 
-#### High Level In Scope
+## High Level In Scope
 - The process gets kicked off once the NPC Roadmap tracker sub domain sends an event to initiate the Profile creation.
 - NPC user will be allowed to add additional data and upload photos.
 - NPC should be able to perform different activities like posting, tagging etc., 
@@ -23,20 +22,20 @@ Non Profit Community Networking HUB Process Discovery
 - Post Non Profit Services, Events, Create Channels etc.,
 - Push Notifications to NPCs based on Matching, Likes, Interest, Post etc.,
 
-#### Next Phase Scope
+## Next Phase Scope
 - Chatting Service on the HUB.
 - Onboarded Candidate will have a Read only View to gain knowledge of the NP Community activities happening based on the Geo-Location.
 - Candidate can show up interest to participate and contribute in NP Community services but this needs Mentor approval.
 - Support for multiple languages if the Spotlight platform expands the services globally.
 
-#### Subdomain and Bounded Context:
+## Subdomain and Bounded Context:
 
 Below are the Core, Generic and Supporting Subdomains which get involved for the NPC registration process.
 - **Core Subdomain:** Networking HUB
 - **Supporting Subdomain:** Profile Creation, NPC Activity Tracker, Recommendation Engine, NPC Match Notification, NPC Shard Indexer, Match NPCs, NPC Activity Streams
 - **Generic Subdomains:** Platform Services, Status Manager, Notification Services
 
-#### Non Profit Community Networking HUB Context view and Bounded Context
+## Non Profit Community Networking HUB Context view and Bounded Context
 
 ![Non Profit Community Networking HUB Context view and Bounded Context](..//Images/HUBContext.PNG) 
 
@@ -50,13 +49,13 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 
 **Note: For depiction we have considered “Like” as one such activity which a NPC perform on the HUB.**
 
-#### NPC Profile Creation: For the first time user. 
+## NPC Profile Creation: For the first time user. 
 
 - NPC doesn’t need to register in the Network HUB
 - When the NPC logs into the Hub for the first time the NPC Profile creation service checks for the existence of the profile. If the profile doesn't exist it will invoke the API to pull the information available in the NPC Core domain
 - Once the data is retrieved and the same gets persisted to the corresponding Sharded Index 
  
-#### Login:
+## Login:
 - OAuth or Single sign on will be used to validate the NPC profile. The profile service will be hosted by the Non Profit Community domain.
 - Once the validation is complete NPC will be able to see other NPC profiles based on the NPC Network Recommendation Engine. This engine is part of NPC HUB Core domain. 
 - NPC Activity Tracker: NPC Network HUB will act as matching engine so that the most NPCs meet. This is to establish meaningful relationships to provide service offerings to the candidates. The core objective is to track the activity of the NPC on the HUB.
@@ -69,11 +68,11 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 - Service makes a request to fetch the recommendations from the HUB Recommendation Engine. This is a preliminary set and cached index.
 - At the same time a domain event “Recommendations” is fired asynchronously to the engine for a refined recommendation.
 
-#### NPC Profile Creation on the NPC Network HUB
+## NPC Profile Creation on the NPC Network HUB
 
 ![NPC Profile Creation on the NPC Network HUB](..//Images/NPCProfileCreationontheNPCNetworkHUB.png) 
 
-#### NPC Activity Tracker:
+## NPC Activity Tracker:
 - This service captures all the sequence of operations that gets executed by a user 
    - Post like
    - Tag
@@ -92,6 +91,4 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 - Another NPC B, does lot of Posts about their service offerings. For this user more Notifications and Tag requests are sent.
 - All these activities are posted to the Sharded Graph DB.
 
-[<-- Back to Home](../README.md)
-[->  NPC Roadmap Tracker](./10_Arch_NPCRoadmapTracker.md)
-[->  NPC Activity Tracker on NPC Network HUB](./12_Arch_NPCActivityTrackeronNPCNetworkHUB.md)
+< [Home](../README.md) | [Previous](./10_Arch_NPCRoadmapTracker.md) | [Next](./12_Arch_NPCActivityTrackeronNPCNetworkHUB.md) >
