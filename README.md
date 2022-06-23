@@ -38,7 +38,7 @@ The Spotlight platform requiremement can be found in the below link
 ## Table of Contents
 
 1. [Process Discovery and DDD Context Map](architecture/ProcessDiscoveryandDDDContextMap.md) 
-2. [Architecture(New)](architecture/1_Arch_TableofContent.md) 
+2. [Architecture](architecture/1_Arch_TableofContent.md) 
 3. [Implementation Approach :: Hexagon Architecture](architecture/HexagonArchitecture.md)
 4. [Deployment View](architecture/DeploymentView.md)
 5. [ADRs](ADRs/ADRs.md) 
