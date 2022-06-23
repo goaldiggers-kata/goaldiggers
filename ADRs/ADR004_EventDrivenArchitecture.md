@@ -1,3 +1,4 @@
+< [Home](../README.md) | [Previous](./ADR003_MicroservicesarchitecturewithContainerization.md) | [Next](./ADR005_SpacedbasedArchitecture.md) >
 # ADR 004: Event Driven Architecture 
 An event is something that has happened in the past. A domain event is, something that happened in the domain that we want other parts of the same subdomain (in-process) or other subdomains to be aware of. The notified subdomain has to react somehow to the events. 
 
@@ -17,3 +18,5 @@ Proposed.
 - The domain events and their side effects (the actions triggered afterwards that are managed by event handlers) should occur almost immediately, usually in-process, and within the same domain. Thus, domain events could be synchronous or asynchronous. Integration events, however, should always be asynchronous. 
 
 - If executing a command related to one aggregate instance requires additional domain rules to be run on one or more additional aggregates, you should design and implement those side effects to be triggered by domain events. The Status Management subdomain will complement.
+
+< [Home](../README.md) | [Previous](./ADR003_MicroservicesarchitecturewithContainerization.md) | [Next](./ADR005_SpacedbasedArchitecture.md) >
