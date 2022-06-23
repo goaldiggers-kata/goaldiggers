@@ -34,7 +34,7 @@ The Architecture proposal is to use **Microservices Oriented style** with multip
 #  Spotlight Platform Component Diagram 
 
 <p align="center">
-  <img src="..//Images/SpotlightPlatformComponentDiagram.png" />
+  <img src="..//Images/6_SpotlightPlatformComponentDiagram.jpg" />
 </p>
 
 
