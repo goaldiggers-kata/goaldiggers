@@ -1,4 +1,4 @@
-< [Home](../README.md) | [Previous](./1_Arch_Overview.md) | [Next](./5_Arch_DomainContextMaptoMicroservicesMapping.md) >
+< [Home](../README.md) | [Previous](./1_Arch_Overview.md) | [Next](./6_Arch_CandidateRegistration.md) >
 
 # Spotlight Context Diagram 
   <p align="center">
@@ -73,4 +73,4 @@ Each cell has a bounded context and solves the problem statement with the help o
 - Containers will also represent long-running processes like web servers and also be short-lived processes like batch jobs, implemented using Kubernetes Cron jobs. 
 - If the process fails, the container ends, and the orchestrator takes over. The orchestrator will have how many instances should be running and if one fails, the orchestrator will create another container instance to replace the failed process.
 
-< [Home](../README.md) | [Previous](./1_Arch_Overview.md) | [Next](./5_Arch_DomainContextMaptoMicroservicesMapping.md) >
+< [Home](../README.md) | [Previous](./1_Arch_Overview.md) | [Next](./6_Arch_CandidateRegistration.md) >
