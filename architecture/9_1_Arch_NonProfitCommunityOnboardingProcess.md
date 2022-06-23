@@ -1,4 +1,4 @@
-< [Home](../README.md) | [Previous](./9_Arch_NonProfitCommunityRegistration.md) | [Next](10_Arch_NPCRoadmapTracker.md) >
+< [Home](../README.md) | [Previous](./9_Arch_NonProfitCommunityRegistration.md) | [Next](./11_Arch_NonProfitCommunityNetworkingHUB.md) >
 
 #  Non Profit Community Onboarding Process 
 
@@ -46,4 +46,4 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 - [BFF](../ADRs/ADR012_BFF.md)
 - [CQRS](../ADRs/ADR013_CQRS.md)
 
-< [Home](../README.md) | [Previous](./9_Arch_NonProfitCommunityRegistration.md) | [Next](10_Arch_NPCRoadmapTracker.md) >
+< [Home](../README.md) | [Previous](./9_Arch_NonProfitCommunityRegistration.md) | [Next](./11_Arch_NonProfitCommunityNetworkingHUB.md) >
