@@ -3,7 +3,7 @@
 # Table of Content
 - [Architecture Overview](./1_Arch_Overview.md) 
 - [Spotlight Context Diagram](./2_Arch_SpotlightContextDiagram.md) 
-- [Domain Context Map to Microservices Mapping](./5_Arch_DomainContextMaptoMicroservicesMapping.md)
+- Domain Context Map to Microservices Mapping
   - Candidate 
     - [Candidate Registration](./6_Arch_CandidateRegistration.md)
     - [Candidate Onboarding Process](./7_Arch_CandidateOnboardingProcess.md)
