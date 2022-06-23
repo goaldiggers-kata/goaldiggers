@@ -39,8 +39,6 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 
 ## Non Profit Community Networking HUB Context view and Bounded Context
 
-![Non Profit Community Networking HUB Context view and Bounded Context](..//Images/HUBContext.PNG) 
-
 <p align="center">
   <img src="..//Images/HUBContext.PNG" />
 </p>
@@ -76,7 +74,6 @@ Below are the Core, Generic and Supporting Subdomains which get involved for the
 
 ## NPC Profile Creation on the NPC Network HUB
 
-![NPC Profile Creation on the NPC Network HUB](..//Images/NPCProfileCreationontheNPCNetworkHUB.png) 
 <p align="center">
   <img src="..//Images/NPCProfileCreationontheNPCNetworkHUB.png" />
 </p>
