@@ -1,4 +1,4 @@
-[<-- Back to Home](../README.md)
+<- [Home](../README.md) 
 
 # Deployment View
 
@@ -30,4 +30,4 @@ In the below representation we have 3 dimensions but we will be adopting **2 Y a
 
 ![Spotlight Context Diagram](..//Images/ScaleCube.PNG)
 
-[<-- Back to Home](../README.md)
+<- [Home](../README.md) 
