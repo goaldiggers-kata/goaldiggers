@@ -1,3 +1,4 @@
+< [Home](../README.md) | [Previous](./ADR008_GeoServicesIntegration.md) | [Next](./ADR010_Blobstore.md) >
 # ADR 0009: Streams
 
 The architecture proposal considered to build the Spotlight platform is distributed and decentralized. In order to bridge the communicaton across all the identified subdomains streaming is platform which will be used.
@@ -28,3 +29,4 @@ Proposed.
 
 - It requires to build a complex pipeline of interactions between producers and consumers and then maintain the entire platform. This requires substantial work and effort and adds complexity. As part of the intial process discovery meetings and domain context map has to defined. 
 
+< [Home](../README.md) | [Previous](./ADR008_GeoServicesIntegration.md) | [Next](./ADR010_Blobstore.md) >
