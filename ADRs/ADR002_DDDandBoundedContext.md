@@ -1,3 +1,5 @@
+< [Home](../README.md) | [Previous](./ADR001_CellBasedArchitecture.md) | [Next](./ADR003_MicroservicesarchitecturewithContainerization.md) >
+
 # ADR 002: DDD and Bounded Context
 This ADR plays a key role in the entire implementation of the platform.
 - Cell Based Architecture
@@ -26,3 +28,5 @@ Proposed.
   - Really skilled in OOP
   - Diligent, since they have to track decisions
   - Communicative, since they have to explain the domain to the other devs (even through documentation)
+
+< [Home](../README.md) | [Previous](./ADR001_CellBasedArchitecture.md) | [Next](./ADR003_MicroservicesarchitecturewithContainerization.md) >
