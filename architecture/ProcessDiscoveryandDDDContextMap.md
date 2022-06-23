@@ -1,4 +1,4 @@
-[<-- Back to Home](../README.md)
+<- [Home](../README.md) 
 
 # Process Discovery And DDD Context Map
 ## Table of Content
@@ -120,5 +120,4 @@ The core crux of the Generic Domain is to support the need of the Core and Suppo
 
 ![Generic Domains](..//Images/GenericDomains.jpg)
 
-[<-- Back to Home](../README.md)
-
+<- [Home](../README.md) 
