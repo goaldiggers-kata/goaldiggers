@@ -1,3 +1,4 @@
+< [Home](../README.md) | [Previous](./ADR007_GraphDB.md) | [Next](./ADR009_Streams.md) >
 # ADR 0008: Geolocation Services Integration
 
 ## Decision 
@@ -24,3 +25,5 @@ Proposed.
 ## Consequences
 
 - Pricing is based on request. As the platform doesn't need all the services we recommend only to use the APIs needed for the platform. 
+
+< [Home](../README.md) | [Previous](./ADR007_GraphDB.md) | [Next](./ADR009_Streams.md) >
