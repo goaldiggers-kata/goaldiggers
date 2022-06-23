@@ -1,4 +1,4 @@
-[<-- Back to Home](../README.md)
+<- [Home](../README.md) 
 
 # Hexagon Architecture
 
@@ -21,4 +21,4 @@ It's a single domain object
 
 ![Spotlight Context Diagram](..//Images/Hexagon1.PNG)
 
-[<-- Back to Home](../README.md)
+<- [Home](../README.md) 
