@@ -2,7 +2,7 @@
 
 # Spotlight Context Diagram 
   <p align="center">
-    <img src="..//Images/SpotlightContextDiagram.png" />
+    <img src="..//Images/7_SpotlightContextDiagram.jpg" />
   </p>
   
   ## The Architectural characteristics that are identified are as below:
