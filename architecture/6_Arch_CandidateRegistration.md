@@ -1,4 +1,4 @@
-< [Home](../README.md) | [Previous](./5_Arch_DomainContextMaptoMicroservicesMapping.md) | [Next](./7_Arch_CandidateOnboardingProcess.md) >
+< [Home](../README.md) | [Previous](./2_Arch_SpotlightContextDiagram.md) | [Next](./7_Arch_CandidateOnboardingProcess.md) >
 
 # Candidate Registration
 
@@ -53,4 +53,4 @@ Key Patterns and ADRs identified for the Candidate Registration process
 - [BFF](../ADRs/ADR012_BFF.md)
 - [CQRS](../ADRs/ADR013_CQRS.md)
 
-< [Home](../README.md) | [Previous](./5_Arch_DomainContextMaptoMicroservicesMapping.md) | [Next](./7_Arch_CandidateOnboardingProcess.md) >
+< [Home](../README.md) | [Previous](./2_Arch_SpotlightContextDiagram.md) | [Next](./7_Arch_CandidateOnboardingProcess.md) >
