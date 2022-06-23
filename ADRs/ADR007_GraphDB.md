@@ -1,3 +1,4 @@
+< [Home](../README.md) | [Previous](./ADR006_Sharding.md) | [Next](./ADR008_GeoServicesIntegration.md) >
 # ADR 007: GraphDB
 - The architecture behind is designed for optimal management, storage, traversal of nodes and relationships as NPC Service Offerings have to be reached to the maximum onboarded candidates. 
 - Graph DB gives the relationships and the primary problem statement how to bridge both the NPC and the candidates.
@@ -29,3 +30,4 @@ Proposed.
 - **Disadvantages**
   - It's niche skill and needs training.
 
+< [Home](../README.md) | [Previous](./ADR006_Sharding.md) | [Next](./ADR008_GeoServicesIntegration.md) >
