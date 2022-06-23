@@ -14,6 +14,6 @@
 
 ## Data Division
 - As part of the analysis the context and the data definitions will be clearly defined and how the data has to be modeled so that we can have subgraphs.
-- All the shards will be divided based on activity or on location. 
+- All the shards will be divided based on the NPC activities.
 
 < [Home](../README.md) | [Previous](./13_Arch_NPCRecommendationEngine.md) >
