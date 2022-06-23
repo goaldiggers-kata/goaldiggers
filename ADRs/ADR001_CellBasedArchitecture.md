@@ -1,3 +1,5 @@
+< [Home](../README.md) | [Previous](./ADRs.md) | [Next](./ADR002_DDDandBoundedContext.md) >
+
 # ADR 001: Cell Based Architecture
 Diversity Cyber council is a non profit organization and doesn’t have a sizeable team. So the overarching Architecture style should be simple to create, evolve and maintain. The development team can start creating the cell as they are confined to subdomain with a bounded context. They can evolve the domain based on the business priorities. Each cell will have all the essential components to be built so that it can support the overall goal of the Spotlight platform.
 
@@ -24,3 +26,5 @@ Proposed.
   - design guidelines, 
   - well defined - CI/CD pipeline which acts as a stage gate for all the implementation milestones. 
   - Clear Architectural representation.
+
+< [Home](../README.md) | [Previous](./ADRs.md) | [Next](./ADR002_DDDandBoundedContext.md) >
