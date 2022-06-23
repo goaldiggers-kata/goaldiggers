@@ -1,3 +1,4 @@
+< [Home](../README.md) | [Previous](./ADR005_SpacedbasedArchitecture.md) | [Next](./ADR007_GraphDB.md) >
 # ADR 006: Sharding
 
 Data sharding is dividing data into horizontal partitions that are organized into various Graph instances or servers. This gives us to spread the load across multiple access points based on the Non Profit community activities on the HUB.
@@ -31,3 +32,4 @@ Proposed.
 
 Cost of the infrastructure. Primarily in the initial phases the recommendation will be use on DBMS node hosting all the activities but later based on the spike of user concurrency the investment on the infrastructure can be increased. The initial gives flexibility to expand later based on demand.
 
+< [Home](../README.md) | [Previous](./ADR005_SpacedbasedArchitecture.md) | [Next](./ADR007_GraphDB.md) >
