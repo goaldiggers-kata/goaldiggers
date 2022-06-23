@@ -33,7 +33,6 @@ The Spotlight platform requiremement can be found in the below link
 * BOT Integration: Useful for both Candidate and NPC
    -  Candidate – Allows the candidate to get the overview of the platform.
    -  NPC – Allows the NPC to understand the platform and various offerings of the platform.
-* ADR for Geo Location
 * ADR for Blob storage which will be used in the Networking HUB domain.
 
 ## Table of Contents
