@@ -38,12 +38,11 @@ The Spotlight platform requiremement can be found in the below link
 ## Table of Contents
 
 1. [Process Discovery and DDD Context Map](architecture/ProcessDiscoveryandDDDContextMap.md) 
-2. [Architecture(To Be Deprecated)](architecture/ArchitectureOverview.md) 
-3. [Architecture(New)](architecture/1_Arch_TableofContent.md) 
-4. [Implementation Approach :: Hexagon Architecture](architecture/HexagonArchitecture.md)
-5. [Deployment View](architecture/DeploymentView.md)
-6. [ADRs](ADRs/ADRs.md) 
-7. References
+2. [Architecture(New)](architecture/1_Arch_TableofContent.md) 
+3. [Implementation Approach :: Hexagon Architecture](architecture/HexagonArchitecture.md)
+4. [Deployment View](architecture/DeploymentView.md)
+5. [ADRs](ADRs/ADRs.md) 
+6. References
      * [Miro - Process Discovery](https://miro.com/app/board/uXjVOySr1RA=/?share_link_id=321299907325)
      * [C4 Model](https://c4model.com/)
      * [Cell Architecture](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md)
